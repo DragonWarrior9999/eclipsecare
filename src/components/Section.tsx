@@ -13,7 +13,7 @@ function Section({ className, children }: SectionProps){
         <div className="bg-orange-400"></div>
 
         <div id="content" className="bg-pink-600">
-          <div id="s1" className=" min-h-[100px] h-full bg-blue-300 rounded-[20px]">
+          <div className=" h-full bg-blue-300 rounded-[20px]">
 
               {/*
               <div className="col-span-6 pt-[150px] relative">

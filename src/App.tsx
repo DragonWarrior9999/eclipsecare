@@ -6,11 +6,14 @@ import Section from './components/Section';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import MenuHeading from './components/MenuHeading';
-import About from './pages/About';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
 
   return (
     <div className="h-[7000px]">
@@ -21,7 +24,13 @@ function App() {
           <MenuHeading>Find Support</MenuHeading>
         </Menu>
       </Header>
-      <About></About>
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+        </Routes>
+      </Router>
+      
     </div>
   )
 }

@@ -19,7 +19,7 @@ export default function MenuHeading({children}: propsNavHeading){
         <div
         onMouseEnter={()=>setHovering(true)}
         onMouseLeave={()=>setHovering(false)}
-        className={`relative min-w-[150px] h-[100px] flex items-center ${hovering? 'bg-red-400' :'bg-blue-500'}`}
+        className={`relative min-w-[150px] min-h-[80px] flex items-center ${hovering? 'bg-red-400' :'bg-blue-500'}`}
         >{children}
             <motion.div className={`absolute bottom-[-100px] w-[200px] h-[100px] border border-white bg-blue-400 
                 ${hovering?  'block'
