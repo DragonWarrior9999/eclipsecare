@@ -26,7 +26,7 @@ export default function Header({children}: propsHeader){
 
         function handleScroll(){
 
-            if(lastScrollPosition.current > 100){
+            if(lastScrollPosition.current > 5){
                 setReducedHeader(true);
             }else{
                 setReducedHeader(false);
@@ -61,7 +61,7 @@ export default function Header({children}: propsHeader){
     }, [])
 
     return (
-        <div className={`w-screen bg-white fixed transform transition duration-2 ${hideHeader? '-translate-y-[200px]': 'translate-y-0'}`}>
+        <div className={`z-50 w-screen bg-white fixed transform transition duration-2 ${hideHeader? '-translate-y-[200px]': 'translate-y-0'}`}>
             <Section className={`transition-all duration-400 ${reducedHeader? 'h-[90px]': 'h-[130px]'}`}
             >
                 <div className="flex items-center justify-between w-full h-full w-full">

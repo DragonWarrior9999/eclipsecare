@@ -5,8 +5,8 @@ export default function Home(){
 
     return (
         <>
-            <div className="bg-[#6C91C9] h-[120px] w-screen">THIS IS THE HOME PAGE</div>
-            <Section className="bg-babyblue min-h-[500px]">
+            <div className="bg-babyblue h-[120px] w-screen">THIS IS THE HOME PAGE</div>
+            <Section className="bg-babyblue min-h-[520px]">
                 <div className="grid h-full lg:grid-cols-12">
                     <div className="text-navy w-full mt-[70px] lg:col-span-7">
                         <div className="p-[20px]">
@@ -19,8 +19,8 @@ export default function Home(){
                             <span className="ml-[10px]">Get Started</span>
                         </div>
                     </div>
-                    <div className="border border-orange-400 w-full lg:col-span-5">
-                        <div className="min-w-[400px] top-[70px] min-h-[300px] mt-[70px] border border-black rounded-lg"></div>
+                    <div className="w-full lg:col-span-5 relative">
+                        <div className="bg-[url('src/assets/hero-img.png')] top-[20px] right-[-40px] relative min-h-[460px] min-w-[590px] bg-no-repeat rounded-lg"></div>
                     </div>
                 </div>
             </Section>
