@@ -56,10 +56,10 @@ export default function Header({children}: propsHeader){
                 <div className="flex items-center justify-between w-full bg-red-400 h-full w-full">
                     <div className={`border border-white bg-[url('src/assets/logo-primary.svg')] bg-center bg-green-400 bg-no-repeat bg-contain w-[180px] h-[100px]`}></div>
                     {/*<img src={logo} className=" bg-green-500 object-contain w-[200px] border border-white" style={{width: "300"}}></img>*/}
-                    <div className="flex items-center">
+                    <div className="hidden lg:flex items-center">
                         {children}
-                        <button className="ml-[10px]">Referral Form</button>
-                        <button className="ml-[10px]">Get Started</button>
+                        <button className="ml-[20px]">Referral Form</button>
+                        <button className="ml-[20px]">Get Started</button>
                     </div>
                 </div>
             </Section>

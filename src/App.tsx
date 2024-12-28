@@ -19,7 +19,7 @@ function App() {
     <div className="h-[7000px]">
       <Header>
         <Menu>
-          <MenuHeading>Our Services</MenuHeading>
+          <MenuHeading>Home</MenuHeading>
           <MenuHeading>More</MenuHeading>
           <MenuHeading>Find Support</MenuHeading>
         </Menu>
