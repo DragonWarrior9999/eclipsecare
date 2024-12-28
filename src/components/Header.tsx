@@ -52,11 +52,11 @@ export default function Header({children}: propsHeader){
 
     return (
         <div className={`w-screen border border-red-500 fixed transform transition duration-2 ${hideHeader? '-translate-y-[200px]': 'translate-y-0'}`}>
-            <Section className="min-h-[110px]">
+            <Section className="h-[110px]">
                 <div className="flex items-center justify-between w-full bg-red-400 h-full w-full">
-                    <div className={`border border-white bg-[url('src/assets/logo-primary.svg')] bg-center bg-green-400 bg-no-repeat bg-contain w-[180px] h-[100px]`}></div>
+                    <div className={`border border-white bg-[url('src/assets/logo-primary.svg')] bg-center bg-green-400 bg-no-repeat bg-contain w-full max-w-[300px] max-h-[100px] h-full`}></div>
                     {/*<img src={logo} className=" bg-green-500 object-contain w-[200px] border border-white" style={{width: "300"}}></img>*/}
-                    <div className="hidden lg:flex items-center">
+                    <div className="hidden lg:flex items-center h-full">
                         {children}
                         <button className="ml-[20px]">Referral Form</button>
                         <button className="ml-[20px]">Get Started</button>
