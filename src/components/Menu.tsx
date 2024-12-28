@@ -6,6 +6,6 @@ interface propsMenu{
 export default function Menu({children}: propsMenu){
 
     return (
-        <div className="h-full border border-white flex">{children}</div>
+        <div className="h-full border border-white text-navy flex">{children}</div>
     )
 }

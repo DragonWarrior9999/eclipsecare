@@ -10,10 +10,10 @@ function Section({ className, children }: SectionProps){
   
   return(
     <div className={`${className} grid lg:grid-cols-[minmax(60px,auto)_minmax(884px,1120px)_minmax(60px,auto)] md:grid-cols-[minmax(60px,auto)_minmax(500px,1120px)_minmax(60px,auto)] grid-cols-[minmax(25px,auto)_minmax(200px,1120px)_minmax(25px,auto)]`}>
-        <div className="bg-orange-400"></div>
+        <div className=""></div>
 
-        <div id="content" className="bg-pink-600">
-          <div className=" h-full bg-blue-300 rounded-[20px]">
+        <div id="content" className="">
+          <div className=" h-full rounded-[20px]">
 
               {/*
               <div className="col-span-6 pt-[150px] relative">
@@ -29,7 +29,7 @@ function Section({ className, children }: SectionProps){
           </div>
         </div>
 
-        <div className="bg-orange-400"></div>
+        <div className=""></div>
     </div>
   )
 }
