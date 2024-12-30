@@ -32,10 +32,24 @@ h3{
 button, div, p{
     font-size: 1.8rem;
 }
-button{
+.button-sm{
     height: 50px;
     padding: 10px 25px;
     border-radius: 4px;
+}
+.button-lg{
+    height: 70px;
+    padding: 20px 35px;
+    border-radius: 4px;
+    font-size: 2.2rem;
+}
+.button-dark{
+    background-color: #6C91C9;
+    color: white;
+}
+.button-light{
+    color: var(--navy);
+    background-color: white;
 }
 .button-dark{
     background-color: #6C91C9;
@@ -64,4 +78,7 @@ span{
     align-items: center;
     border-bottom: solid 2px var(--navy);
     text-decoration: underline;
+}
+.s4-p{
+    padding: 30px 50px;
 }
