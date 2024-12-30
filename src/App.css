@@ -56,3 +56,12 @@ span{
     font-size: 3rem;
     background-color: white;
 }
+
+.faq-list > li{
+    min-height: 60px;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom: solid 2px var(--navy);
+    text-decoration: underline;
+}

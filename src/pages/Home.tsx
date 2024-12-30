@@ -1,5 +1,7 @@
 import Section from '../components/Section';
 import SplitBanner from '../components/SplitBanner';
+import Split from '../components/Split';
+import { Link } from 'react-router-dom';
 
 export default function Home(){
 
@@ -17,7 +19,7 @@ export default function Home(){
                         </div>
                         <div className="p-[20px]">
                             <button className="button-light">Learn More</button>
-                            <span className="ml-[10px]">Get Started</span>
+                            <span className="underline ml-[10px]">Get Started</span>
                         </div>
                     </div>
                     <div className="w-full lg:col-span-5 relative hidden lg:block">
@@ -47,11 +49,37 @@ export default function Home(){
             </Section>
             <Section className="min-h-[450px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
-                    <SplitBanner image="left" className="bg-white text-navy rounded-lg border border-white min-h-[350px]">
+                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg border border-white min-h-[350px]">
                         <h1 className="mt-[35px]">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
-
                     </SplitBanner>
+                </div>
+            </Section>
+            <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
+                <div className="bg-white p-[60px]">
+                    <div>
+                        <h2>Some helpful links to get you started</h2>
+                        <p>Check out our blogs too...</p>
+                    </div>
+                    <Split className="min-h-[200px]" left_span='6' right_span='6'
+                        left={
+                            <ul className="p-[20px] faq-list">
+                                <li>Frequently Asked Questions</li>
+                                <li>How to sign up as a client on EclispeCare</li>
+                                <li>Risks of taking your booking away from EclipseCare</li>
+                                <li>Insurance</li>
+                            </ul>
+                        } 
+                        right={
+                            <ul className="hidden md:block p-[20px] faq-list">
+                                <li>Navigating NDIS</li>
+                                <li>Writing a great job post to find a support worker</li>
+                                <li>What to consider when looking for support</li>
+                                <li>Building your support team</li>
+                            </ul>
+                        }
+                
+                    />
                 </div>
             </Section>
         </>
