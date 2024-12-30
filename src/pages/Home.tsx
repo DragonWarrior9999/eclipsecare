@@ -2,6 +2,7 @@ import Section from '../components/Section';
 import SplitBanner from '../components/SplitBanner';
 import Split from '../components/Split';
 import { Link } from 'react-router-dom';
+import Quads from '../components/Quads';
 
 export default function Home(){
 
@@ -80,6 +81,37 @@ export default function Home(){
                         }
                 
                     />
+                </div>
+            </Section>
+            <Section className="min-h-[620px]">
+                <div className="pt-[40px]">
+                    <Quads
+                        className=""
+                        top_left={
+                            <div className="text">
+                                <h2>Accessing disability support services with NDIS funding</h2>
+                                <p>Anyone with self-managed or plan-managed NDIS funding can access disability support services on Mable.</p>
+                            </div>
+                        } 
+                        top_right={
+                            <div className="text">
+                            
+                            </div>
+                        } 
+                        bottom_left={
+                            <div className="text">
+                                <h3>How to use NDIS disability support funding on Mable</h3>
+                                <p>If you are self-managed or plan-managed you can use your funds to book a disability support worker directly through your Mable account. When setting up your account, just provide Mable with your funding details and we will handle the rest. Learn more about using your NDIS funding on Mable.</p>
+                            </div>
+                        } 
+                        bottom_right={
+                            <div className="text">
+                                <h3>What disability support can be booked on Mable?</h3>
+                                <p>Depending on your NDIS funding limits, you can hire disability who can provide services including: gardening, cleaning, cooking, transport, personal care, nursing services, speech therapy, occupational therapy, physiotherapy, and psychology support. Learn more about the services available on Mable.</p>
+                            </div>
+                        } 
+                
+                    ></Quads>
                 </div>
             </Section>
         </>
