@@ -1,4 +1,5 @@
 import Section from '../components/Section';
+import SplitBanner from '../components/SplitBanner';
 
 export default function Home(){
 
@@ -42,6 +43,14 @@ export default function Home(){
                             <h3>Manage</h3>
                             <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla nullam eu viverra porta fusce. nullam eu viverra porta </p>
                         </div>
+                </div>
+            </Section>
+            <Section className="min-h-[500px] mt-[30px]">
+                <div className="p-[60px]">
+                    <SplitBanner image="left" className="rounded-lg border border-white min-h-[400px]">
+                        <h2>Iaculis arcu maecenas</h2>
+                        <p>Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo curabitur. Nisi felis eros potenti diam vehicula mattis senectus suspendisse. Nisl luctus elit fringilla euismod aenean dis felis erat.</p>
+                    </SplitBanner>
                 </div>
             </Section>
         </>
