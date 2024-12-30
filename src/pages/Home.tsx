@@ -50,7 +50,7 @@ export default function Home(){
             </Section>
             <Section className="min-h-[450px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
-                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg border border-white min-h-[350px]">
+                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg min-h-[350px]">
                         <h1 className="mt-[35px]">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
                     </SplitBanner>
@@ -83,19 +83,19 @@ export default function Home(){
                     />
                 </div>
             </Section>
-            <Section className="min-h-[620px]">
+            <Section className="min-h-[620px] bg-white">
                 <div className="pt-[40px]">
                     <Quads
                         className=""
                         top_left={
                             <div className="text">
                                 <h2>Accessing disability support services with NDIS funding</h2>
-                                <p>Anyone with self-managed or plan-managed NDIS funding can access disability support services on Mable.</p>
+                                <p className="mt-[20px] text-[2rem] font-semibold">Anyone with self-managed or plan-managed NDIS funding can access disability support services on Mable.</p>
                             </div>
                         } 
                         top_right={
-                            <div className="text">
-                            
+                            <div className="h-full">
+                                <div className="mt-[10px] border border-orange rounded-lg h-[250px] bg-cover bg-right bg-no-repeat bg-[url('src/assets/laptop-lady.jpg')]"></div>
                             </div>
                         } 
                         bottom_left={

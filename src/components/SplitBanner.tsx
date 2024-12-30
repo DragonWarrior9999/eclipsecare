@@ -25,6 +25,7 @@ export default function SplitBanner({children, className, image, img_src}: props
         return (
             <div className={`md:grid grid-cols-12 ${className}`}>
                 <div className={`col-span-6 bg-[url('${img_src}')] bg-cover bg-no-repeat`}></div>
+                {/*<div className={`col-span-6 bg-[url('${img_src}')] bg-no-repeat`}></div>*/}
                 <div className="col-span-6">
                     <div className="text">
                         {children}

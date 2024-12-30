@@ -14,16 +14,16 @@ export default function Quads({top_left, top_right, bottom_right, bottom_left} :
 
     return(
         <div className="md:grid grid-cols-2 grid-rows-2">
-            <div className="border">
+            <div className="">
                 {top_left}
             </div>
-            <div className="border min-h-[250px]">
+            <div className="min-h-[250px]">
                 {top_right}
             </div>
-            <div className="border min-h-[250px]">
+            <div className="min-h-[250px]">
                 {bottom_left}
             </div>
-            <div className="border min-h-[250px]">
+            <div className="min-h-[250px]">
                 {bottom_right}
             </div>
         </div>
