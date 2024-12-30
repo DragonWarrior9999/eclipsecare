@@ -22,6 +22,11 @@ h1{
 }
 h2{
     font-size: 3.2rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 2.4rem;
+    font-weight: 700;
 }
 button, div, p{
     font-size: 1.8rem;
@@ -41,4 +46,7 @@ button{
 }
 span{
     padding: 10px 20px;
+}
+.text{
+    padding: 20px;
 }
