@@ -50,3 +50,8 @@ span{
 .text{
     padding: 20px;
 }
+.cards{
+    border: solid var(--navy);
+    font-size: 3rem;
+    background-color: white;
+}
