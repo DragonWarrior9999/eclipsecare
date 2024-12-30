@@ -10,7 +10,8 @@ export default {
         primary: 'var(--primary)',
         navy: 'var(--navy)',
         babyblue: 'var(--babyblue)',
-        offwhite: 'var(--offwhite)'
+        offwhite: 'var(--offwhite)',
+        primarydark: 'var(--primarydark)'
       }
     },
   },

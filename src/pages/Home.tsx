@@ -25,7 +25,7 @@ export default function Home(){
                     </div>
                 </div>
             </Section>
-            <Section className="pt-[60px] pb-[50px] bg-babyblue text-navy min-h-[500px] mt-[20px]">
+            <Section className="pt-[60px] pb-[50px] bg-white text-navy min-h-[500px] mt-[20px]">
                 <div className="border border-pink text">
                     <h2>Lorem ipsum odor amet.</h2>
                     <p className="max-w-[740px]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis, scelerisque interdum sapien molestie facilisis pharetra.</p>
@@ -45,11 +45,12 @@ export default function Home(){
                         </div>
                 </div>
             </Section>
-            <Section className="min-h-[500px] mt-[30px]">
-                <div className="p-[60px]">
-                    <SplitBanner image="left" className="rounded-lg border border-white min-h-[400px]">
-                        <h2>Iaculis arcu maecenas</h2>
-                        <p>Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo curabitur. Nisi felis eros potenti diam vehicula mattis senectus suspendisse. Nisl luctus elit fringilla euismod aenean dis felis erat.</p>
+            <Section className="min-h-[450px] mt-[30px] bg-primarydark">
+                <div className="p-[40px]">
+                    <SplitBanner image="left" className="bg-white text-navy rounded-lg border border-white min-h-[350px]">
+                        <h1 className="mt-[35px]">Iaculis ar maecenas</h1>
+                        <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
+
                     </SplitBanner>
                 </div>
             </Section>
