@@ -48,11 +48,13 @@ export default function Home(){
                         </div>
                 </div>
             </Section>
-            <Section className="min-h-[450px] mt-[30px] bg-primarydark">
+            <Section className="min-h-[400px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
-                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg min-h-[350px]">
-                        <h1 className="mt-[35px]">Iaculis ar maecenas</h1>
+                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg min-h-[320px]">
+                        <h1 className="mt-[30px]">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
+                        {/*MAKE THIS A BIGG AHH BUTTON */}
+                        <button className="mt-[15px] big-button bg-babyblue text-navy">Get Started</button>
                     </SplitBanner>
                 </div>
             </Section>
