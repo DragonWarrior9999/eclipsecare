@@ -35,15 +35,15 @@ export default function Home(){
                 </div> 
                 <div className="mt-[10px] text flex-col flex md:flex-row justify-center gap-8">
                         <div className="text w-full md:max-w-[300px] rounded-lg min-h-[200px] border border-white cards">
-                            <h3>Connect</h3>
+                            <h3>1. Connect</h3>
                             <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. viverra porta fusce</p>
                         </div>
                         <div className="text w-full md:max-w-[300px] rounded-lg min-h-[200px] border border-white cards">
-                            <h3>Book</h3>
+                            <h3>2. Book</h3>
                             <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. nullam eu viverra</p>
                         </div>
                         <div className="text w-full md:max-w-[300px] rounded-lg min-h-[200px] border border-white cards">
-                            <h3>Manage</h3>
+                            <h3>3. Manage</h3>
                             <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla nullam eu viverra porta fusce. nullam eu viverra porta </p>
                         </div>
                 </div>
