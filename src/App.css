@@ -36,3 +36,11 @@ span{
 .text{
     padding: 20px;
 }
+.faq-list > li{
+    min-height: 60px;
+    display: flex;
+    border: solid 1px violet;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom: solid 2px black;
+}
