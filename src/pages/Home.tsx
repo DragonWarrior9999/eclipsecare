@@ -113,20 +113,20 @@ export default function Home(){
                     ></Quads>
                 </div>
             </Section>
-            <Section className="">
-                    <Split className="min-h-[200px] bg-white" left_span='6' right_span='6' 
-                    left={
-                        <div className="text">
-                            <h2>Whatever you want to achieve, we’ll help you get there.</h2>
-                        </div>
-                    }
-                    right={
-                        <div className="flex justify-end">
-                            <button className="button-lg">Find Support</button>
-                            <button className="button-lg">Newsletter</button>
-                        </div>
-                    }
-                    ></Split>
+            <Section className="min-h-[600px] mt-[100px] relative">
+                <Split className="min-h-[200px] bg-white" left_span='6' right_span='6' 
+                left={
+                    <div className="text">
+                        <h2>Whatever you want to achieve, we’ll help you get there.</h2>
+                    </div>
+                }
+                right={
+                    <div className="flex justify-end">
+                        <button className="button-lg">Find Support</button>
+                        <button className="button-lg">Newsletter</button>
+                    </div>
+                }
+                ></Split>
             </Section>
         </>
     )
