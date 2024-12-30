@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+:root{
+    --primary: #6C91C9;
+    --navy: #1D2240;
+    --babyblue: #E4EFFF;
+    --offwhite: #F6F9FF;
+    --primarydark: #48699C;
+}
+
 html{
     font-size: 10px;
 }
@@ -25,10 +33,27 @@ button, div, p{
     font-size: 1.8rem;
 }
 button{
-    border: solid white;
     height: 50px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 4px;
+}
+.button-sm{
+    height: 50px;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+.button-lg{
+    height: 70px;
+    padding: 20px 35px;
+    border-radius: 4px;
+}
+.button-dark{
+    background-color: #6C91C9;
+    color: white;
+}
+.button-light{
+    color: var(--navy);
+    background-color: white;
 }
 span{
     padding: 10px 20px;
@@ -36,11 +61,17 @@ span{
 .text{
     padding: 20px;
 }
+.cards{
+    border: solid var(--navy);
+    font-size: 3rem;
+    background-color: white;
+}
+
 .faq-list > li{
     min-height: 60px;
     display: flex;
-    border: solid 1px violet;
     padding: 20px 0;
     align-items: center;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--navy);
+    text-decoration: underline;
 }

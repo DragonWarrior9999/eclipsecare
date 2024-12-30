@@ -19,7 +19,7 @@ export default function Home(){
                             <p className="max-w-[530px]">We're committed to our family and providing the best outcomes possible for participants and their goals in society.</p>
                         </div>
                         <div className="p-[20px]">
-                            <button className="button-light">Learn More</button>
+                            <button className="button-light button-sm">Learn More</button>
                             <span className="ml-[10px]">Get Started</span>
                         </div>
                     </div>
@@ -80,7 +80,6 @@ export default function Home(){
                                 <li>Building your support team</li>
                             </ul>
                         }
-                
                     />
                 </div>
             </Section>
@@ -111,9 +110,23 @@ export default function Home(){
                                 <p>Depending on your NDIS funding limits, you can hire disability who can provide services including: gardening, cleaning, cooking, transport, personal care, nursing services, speech therapy, occupational therapy, physiotherapy, and psychology support. Learn more about the services available on Mable.</p>
                             </div>
                         } 
-                
                     ></Quads>
                 </div>
+            </Section>
+            <Section className="">
+                    <Split className="min-h-[200px] bg-white" left_span='6' right_span='6' 
+                    left={
+                        <div className="text">
+                            <h2>Whatever you want to achieve, we’ll help you get there.</h2>
+                        </div>
+                    }
+                    right={
+                        <div className="flex justify-end">
+                            <button className="button-lg">Find Support</button>
+                            <button className="button-lg">Newsletter</button>
+                        </div>
+                    }
+                    ></Split>
             </Section>
         </>
     )
