@@ -67,8 +67,8 @@ span{
 }
 .cards{
     border: solid var(--navy);
-    font-size: 3rem;
     background-color: white;
+    padding: 20px;
 }
 
 .faq-list > li{

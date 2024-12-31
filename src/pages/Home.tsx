@@ -28,23 +28,23 @@ export default function Home(){
                     </div>
                 </div>
             </Section>
-            <Section className="pt-[60px] pb-[50px] bg-white text-navy min-h-[500px] mt-[20px]">
-                <div className="border border-pink text">
+            <Section className="pt-[60px] pb-[20px] bg-white text-navy min-h-[500px] border">
+                <div className="text">
                     <h2>Lorem ipsum odor amet.</h2>
-                    <p className="max-w-[740px]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis, scelerisque interdum sapien molestie facilisis pharetra.</p>
+                    <p className="max-w-[740px] mt-[15px]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis, scelerisque interdum sapien molestie facilisis pharetra.</p>
                 </div> 
-                <div className="mt-[10px] text flex-col flex md:flex-row justify-center gap-8">
-                        <div className="text w-full md:max-w-[300px] rounded-lg min-h-[200px] border border-white cards">
+                <div className="mt-[10px] text flex-col flex md:flex-row justify-center gap-10">
+                        <div className="w-full md:max-w-[320px] rounded-lg min-h-[200px] cards">
                             <h3>1. Connect</h3>
-                            <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. viverra porta fusce</p>
+                            <p className="mt-[20px] ">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. viverra porta fusce</p>
                         </div>
-                        <div className="text w-full md:max-w-[300px] rounded-lg min-h-[200px] border border-white cards">
+                        <div className="w-full md:max-w-[300px] rounded-lg min-h-[200px] cards">
                             <h3>2. Book</h3>
-                            <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. nullam eu viverra</p>
+                            <p className="mt-[20px] ">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. nullam eu viverra</p>
                         </div>
-                        <div className="text w-full md:max-w-[300px] rounded-lg min-h-[200px] border border-white cards">
+                        <div className=" w-full md:max-w-[300px] rounded-lg min-h-[200px] cards">
                             <h3>3. Manage</h3>
-                            <p className="mt-[20px] text-[1.6rem]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla nullam eu viverra porta fusce. nullam eu viverra porta </p>
+                            <p className="mt-[20px] ">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla nullam eu viverra porta fusce. nullam eu viverra porta </p>
                         </div>
                 </div>
             </Section>
@@ -114,7 +114,7 @@ export default function Home(){
                     ></Quads>
                 </div>
             </Section>
-            <Section className="">
+            <Section className="bg-babyblue p-[40px]">
                     <Split className="s4-p min-h-[200px] bg-primarydark rounded-lg" left_span='6' right_span='6' 
                     left={
                         <div className="text-white">

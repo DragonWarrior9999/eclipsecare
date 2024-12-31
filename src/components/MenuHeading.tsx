@@ -21,7 +21,7 @@ export default function MenuHeading({children}: propsNavHeading){
         onMouseLeave={()=>setHovering(false)}
         className={`relative pl-8 pr-8 h-full flex items-center`}
         >{children}
-            <motion.div className={`absolute bottom-[-100px] w-[200px] h-[100px] border border-white bg-blue-400 
+            <motion.div className={`absolute bottom-[-300px] w-[700px] min-h-[300px] border border-white bg-blue-400 
                 ${hovering?  'block'
                     : 'hidden'
                     }
