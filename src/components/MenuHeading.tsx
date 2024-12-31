@@ -1,4 +1,4 @@
-import { useState, useEffect, ReactNode, Children } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 
@@ -8,10 +8,11 @@ import { motion } from 'framer-motion';
 //}
 
 interface propsNavHeading{
-    children: String;
+    label: string;
+    children: ReactNode;
 }
 
-export default function MenuHeading({children}: propsNavHeading){
+export default function MenuHeading({label, children}: propsNavHeading){
 
     const [hovering, setHovering] = useState(false);
     
@@ -19,9 +20,9 @@ export default function MenuHeading({children}: propsNavHeading){
         <div
         onMouseEnter={()=>setHovering(true)}
         onMouseLeave={()=>setHovering(false)}
-        className={`relative pl-8 pr-8 h-full flex items-center`}
-        >{children}
-            <motion.div className={`absolute bottom-[-300px] w-[700px] min-h-[300px] border border-white bg-blue-400 
+        className={`relative pl-8 pr-8 h-full flex items-center border border-black`}
+        >{label}
+            <motion.div className={`absolute left-[-300px] bottom-[-400px] min-w-[300px] min-h-[400px] border border-white bg-red-400 
                 ${hovering?  'block'
                     : 'hidden'
                     }
@@ -29,7 +30,9 @@ export default function MenuHeading({children}: propsNavHeading){
                 initial={{opacity: 0}}
                 animate={hovering? {opacity:1} : {opacity:0}}
                 transition={{duration:0.2}}
-                ></motion.div>
+                >
+                    {children}
+                </motion.div>
         </div>
     )
 }

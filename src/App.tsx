@@ -6,6 +6,7 @@ import Section from './components/Section';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import MenuHeading from './components/MenuHeading';
+import SubMenu from './components/SubMenu';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 
@@ -19,9 +20,13 @@ function App() {
     <div className="h-[7000px]">
       <Header>
         <Menu>
-          <MenuHeading>Home</MenuHeading>
-          <MenuHeading>More</MenuHeading>
-          <MenuHeading>Find Support</MenuHeading>
+          <MenuHeading label="More">
+            <SubMenu></SubMenu>
+          </MenuHeading>
+          <MenuHeading label="Find Support">
+            <SubMenu></SubMenu>
+          </MenuHeading>
+          <MenuHeading label="Home" children=""></MenuHeading>
         </Menu>
       </Header>
 
