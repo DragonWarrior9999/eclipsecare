@@ -3,6 +3,7 @@ import SplitBanner from '../components/SplitBanner';
 import Split from '../components/Split';
 import { Link } from 'react-router-dom';
 import Quads from '../components/Quads';
+import Form from '../components/Form';
 
 export default function Home(){
 
@@ -126,6 +127,16 @@ export default function Home(){
                         <button className="button-lg">Newsletter</button>
                     </div>
                 }
+                ></Split>
+            </Section>
+            <Section className="min-h-[600px]">
+                <Split className="bg-white min-h-[400px]" left_span='6' right_span='6'
+                    left={
+                        <Form></Form>                        
+                    }
+                    right={
+                        <div className="w-[200px] h-[200px] border border-white"></div>
+                    }
                 ></Split>
             </Section>
         </>
