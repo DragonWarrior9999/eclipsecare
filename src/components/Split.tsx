@@ -7,13 +7,14 @@ interface propsSplit{
     right: ReactNode;
     left_span: string;
     right_span: string;
+    responsive: string;
     
 }
 
-export default function Split({className, left_span, right_span, left, right}: propsSplit ){
+export default function Split({className, responsive, left_span, right_span, left, right}: propsSplit ){
 
     return (
-        <div className={`md:grid grid-cols-12 ${className}`}>
+        <div className={`${responsive}:grid grid-cols-12 ${className}`}>
             <div className={`col-span-${left_span}`}>
                 {left}
             </div>

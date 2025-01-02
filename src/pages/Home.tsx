@@ -65,7 +65,7 @@ export default function Home(){
                         <h2>Some helpful links to get you started</h2>
                         <p>Check out our blogs too...</p>
                     </div>
-                    <Split className="min-h-[200px]" left_span='6' right_span='6'
+                    <Split responsive="md" className="min-h-[200px]" left_span='6' right_span='6'
                         left={
                             <ul className="p-[20px] faq-list">
                                 <li>Frequently Asked Questions</li>
@@ -116,19 +116,27 @@ export default function Home(){
                 </div>
             </Section>
             <Section className="bg-babyblue p-[40px]">
-                    <Split className="s4-p min-h-[200px] bg-primarydark rounded-lg" left_span='6' right_span='6' 
+                    <Split responsive="md" className="s4-p min-h-[200px] bg-primarydark rounded-lg" left_span='6' right_span='6' 
                     left={
                         <div className="text-white">
                             <h2>Whatever you want to achieve, we’ll help you get there.</h2>
                         </div>
                     }
                     right={
-                        <div className="mt-[40px] flex justify-end">
-                            <button className="mr-[15px] button-light button-lg">Find Support</button>
-                            <button className="button-light button-lg">Newsletter</button>
+                        <div className="flex flex-wrap items-center gap-4 justify-end">
+                            <button className="button-light button-lg">Find Support</button>
+                            <button className="ml-[10px] button-light button-lg">Newsletter</button>
                         </div>
                     }
                 ></Split>
+            </Section>
+            <Section className="bg-white min-h-[600px]">
+                <div className="min-h-[400px] lg:grid grid-cols-12">
+                    <div className="flex justify-center lg:block col-span-6">
+                        <Form></Form>
+                    </div>
+                    <div className="col-span-6 border"></div>
+                </div>
             </Section>
         </>
     )

@@ -16,8 +16,8 @@ export default function SplitBanner({children, className, image, img_src}: props
                         {children}
                     </div>
                 </div>
-                <div className={`col-span-6 bg-[url('${img_src})'] bg-contain`}></div>
-            /Users/wesleyfu/Documents/eclipsecare/src/assets/smiling-women.jpg
+                <div className={`col-span-6 bg-[url('src/assets/smiling-women.jpg')] bg-cover`}></div>
+            {/*/Users/wesleyfu/Documents/eclipsecare/src/assets/smiling-women.jpg*/}
 
             </div>
         )

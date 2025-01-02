@@ -12,6 +12,9 @@ export default {
         babyblue: 'var(--babyblue)',
         offwhite: 'var(--offwhite)',
         primarydark: 'var(--primarydark)'
+      },
+      screens:{
+        'xs': '500px'
       }
     },
   },

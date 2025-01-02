@@ -6,17 +6,30 @@ export default function Form(){
 
 
     return(
-        <div className="text max-w-[450px] min-h-[520px] bg-blue-400">
+        <div className="p-[40px] max-w-[500px] min-h-[550px] bg-white border border-primarydark rounded-lg text-navy">
             <p>Request Support</p>
             <p>Our Team is here to help. Contact us today to learn more about our services to speak directly with one of our dedicated staff</p>
-            <div className="sm:grid grid-cols-2 grid-rows-4 gap-3 border border-yellow min-h-[300px]">
-                <div className="form-div border border-red-400"></div>
-                <div className="form-div border border-red-400"></div>
-                <div className="form-div col-span-2 border border-red-400"></div>
-                <div className="form-div border border-red-400"></div>
-                <div className="form-div border border-red-400"></div>
-                <div className="form-div col-span-2 border border-red-400"></div>
+            <div className="mt-[20px] xs:grid grid-cols-2 grid-rows-4 gap-3 border border-yellow min-h-[300px]">
+                <div className="form-div">
+                    <input type="text" placeholder="First Name" className="form-input w-full h-full"/>
+                </div>
+                <div className="form-div">
+                    <input type="text" placeholder="Last Name" className="form-input w-full h-full"/>
+                </div>
+                <div className="form-div col-span-2">
+                    <input type="text" placeholder="Email" className="form-input w-full h-full"/>
+                </div>
+                <div className="form-div">
+                    <input type="text" placeholder="Date of Birth" className="form-input w-full h-full"/>
+                </div>
+                <div className="form-div">
+                    <input type="text" placeholder="Phone" className="form-input w-full h-full"/>
+                </div>
+                <div className="form-div col-span-2">
+                    <input type="text" placeholder="Message" className="form-input w-full h-full"/>
+                </div>
             </div>
+            <button className="mt-[20px] button-sm button-dark">Send</button>
         </div>
     )
 }

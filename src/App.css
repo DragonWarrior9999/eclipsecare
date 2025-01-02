@@ -36,6 +36,7 @@ button, div, p{
     height: 50px;
     padding: 10px 25px;
     border-radius: 4px;
+    min-width: 120px;
 }
 .button-lg{
     height: 70px;
@@ -84,4 +85,13 @@ span{
 }
 .form-div{
     min-height:70px;
+    padding: 6px 0;
+    border: solid violet;
+}
+.form-input{
+    background-color: white;
+    border: solid var(--primarydark);
+    border-radius: 4px;
+    padding-left: 12px;
+    min-height: 50px;
 }
