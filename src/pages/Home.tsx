@@ -4,6 +4,7 @@ import Split from '../components/Split';
 import { Link } from 'react-router-dom';
 import Quads from '../components/Quads';
 import Form from '../components/Form';
+import img_the_boys from '../assets/theBoys.jpg';
 
 export default function Home(){
 
@@ -51,7 +52,7 @@ export default function Home(){
             </Section>
             <Section className="min-h-[400px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
-                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg min-h-[320px]">
+                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg min-h-[320px] ">
                         <h1 className="mt-[30px]">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
                         {/*MAKE THIS A BIGG AHH BUTTON */}
@@ -135,8 +136,18 @@ export default function Home(){
                     <div className="flex justify-center lg:block col-span-6">
                         <Form></Form>
                     </div>
-                    <div className="col-span-6 border"></div>
+                    <div className="col-span-6 border">
+                        <SplitBanner img_src={img_the_boys} image="left" className="border border-black bg-red-500 text-navy rounded-lg min-h-[200px]">
+                            <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
+                            {/*MAKE THIS A BIGG AHH BUTTON */}
+                        </SplitBanner>
+                        <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-red text-navy rounded-lg min-h-[200px]">
+                            <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
+                            {/*MAKE THIS A BIGG AHH BUTTON */}
+                        </SplitBanner>
+                    </div>
                 </div>
+                
             </Section>
         </>
     )
