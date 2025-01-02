@@ -3,6 +3,7 @@ import SplitBanner from '../components/SplitBanner';
 import Split from '../components/Split';
 import { Link } from 'react-router-dom';
 import Quads from '../components/Quads';
+import Form from '../components/Form';
 
 export default function Home(){
 
@@ -127,7 +128,7 @@ export default function Home(){
                             <button className="button-light button-lg">Newsletter</button>
                         </div>
                     }
-                    ></Split>
+                ></Split>
             </Section>
         </>
     )
