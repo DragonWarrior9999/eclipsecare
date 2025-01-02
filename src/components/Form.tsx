@@ -6,7 +6,7 @@ export default function Form(){
 
 
     return(
-        <div className="p-[40px] max-w-[500px] min-h-[550px] bg-white border border-primarydark rounded-lg text-navy">
+        <div className="p-[40px] max-w-[500px] min-h-[550px] bg-babyblue border border-primarydark rounded-lg text-navy">
             <p>Request Support</p>
             <p>Our Team is here to help. Contact us today to learn more about our services to speak directly with one of our dedicated staff</p>
             <div className="mt-[20px] xs:grid grid-cols-2 grid-rows-4 gap-3 border border-yellow min-h-[300px]">
