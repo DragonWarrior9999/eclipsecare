@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import BehaviourSupport from './pages/BehaviourSupport';
 
 
 
@@ -31,7 +32,7 @@ function App() {
               left_children={
                 <>
                   <ul className="sub-menu-ul">Support Coordination
-                      <Link to=""><li>Behaviour Support</li></Link>
+                      <Link to="/Services/BehaviourSupport"><li>Behaviour Support</li></Link>
                       <Link to=""><li>Spending Support</li></Link>
                       <Link to=""><li>Living Support (SIL)</li></Link>
                   </ul>
@@ -91,6 +92,7 @@ function App() {
           <Route path="/" element={<Home/>}></Route>
           <Route path="/About" element={<About/>}></Route>
           <Route path="/Services" element={<Services/>}></Route>
+          <Route path="/Services/BehaviourSupport" element={<BehaviourSupport/>}></Route>
         </Routes>
       </Router>
       
