@@ -104,3 +104,10 @@ span{
     padding-left: 12px;
     min-height: 50px;
 }
+.sub-menu-ul{
+    font-weight: 500;
+}
+.sub-menu-ul > li{
+    padding: 0 3px;
+    margin-top: 5px;
+}
