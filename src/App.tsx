@@ -10,8 +10,11 @@ import SubMenu from './components/SubMenu';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Services from './pages/Services';
-import BehaviourSupport from './pages/BehaviourSupport';
+import Services from './pages/Services/Services';
+import BehaviourSupport from './pages/Services/BehaviourSupport';
+import LivingSupport from './pages/Services/LivingSupport';
+import SpendingSupport from './pages/Services/SpendingSupport';
+
 
 
 
@@ -33,8 +36,8 @@ function App() {
                 <>
                   <ul className="sub-menu-ul">Support Coordination
                       <Link to="/Services/BehaviourSupport"><li>Behaviour Support</li></Link>
-                      <Link to=""><li>Spending Support</li></Link>
-                      <Link to=""><li>Living Support (SIL)</li></Link>
+                      <Link to="/Services/SpendingSupport"><li>Spending Support</li></Link>
+                      <Link to="/Services/LivingSupport"><li>Living Support (SIL)</li></Link>
                   </ul>
                   <ul className="sub-menu-ul">Other
                       <Link to=""><li>Skills Development</li></Link>
@@ -93,6 +96,8 @@ function App() {
           <Route path="/About" element={<About/>}></Route>
           <Route path="/Services" element={<Services/>}></Route>
           <Route path="/Services/BehaviourSupport" element={<BehaviourSupport/>}></Route>
+          <Route path="/Services/LivingSupport" element={<LivingSupport/>}></Route>
+          <Route path="/Services/SpendingSupport" element={<SpendingSupport/>}></Route>
         </Routes>
       </Router>
       

@@ -1,6 +1,5 @@
-
-import Hero from "../components/Hero"
-import img_hero from '../assets/hero-gradient-bg.png'
+import Hero from '../../components/Hero'
+import img_hero from '../../assets/hero-gradient-bg.png'
 
 export default function About(){
 

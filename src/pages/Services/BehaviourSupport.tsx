@@ -1,11 +1,11 @@
-import Hero from "../components/Hero"
-import Section from '../components/Section';
-import SplitBanner from '../components/SplitBanner';
-import Split from '../components/Split';
+import Hero from "../../components/Hero"
+import Section from '../../components/Section';
+import SplitBanner from '../../components/SplitBanner';
+import Split from '../../components/Split';
 import { Link } from 'react-router-dom';
-import Quads from '../components/Quads';
-import Form from '../components/Form';
-import HeroV2 from "../components/HeroV2";
+import Quads from '../../components/Quads';
+import Form from '../../components/Form';
+import HeroV2 from "../../components/HeroV2";
 
 
 
