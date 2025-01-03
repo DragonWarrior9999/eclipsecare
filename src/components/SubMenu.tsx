@@ -13,10 +13,16 @@ export default function SubMenu(){
     )*/}
     {/*height has too match parents height MenuHeading() should deal with position*/}
     return(
-        <div className="flex bg-white w-[850px] h-[380px] p-[20px]">
-            <div className="h-full w-[300px] border rounded-lg border-primary p-[20px]"
-                style={{backgroundImage: 'src/assets/laptop-lady.jpg'}}
+        <div className="flex bg-opacity-98 bg-white w-[850px] h-[380px] rounded-md p-[20px]">
+            <div className="h-full w-[300px] rounded-lg p-[15px] pr-[40px]"
             >
+                <div className="h-full w-full border-violet-400 rounded-lg" 
+                    style={{
+                        backgroundImage: "url('src/assets/theBoys.jpg')",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center"
+                    }}
+                ></div>
             </div>
                 {/*
             <div className="grid grid-cols-2 grid-rows-4 h-full w-[600px] bg-blue-400">
@@ -30,7 +36,7 @@ export default function SubMenu(){
                 <div className="flex items-center text">Tax and Super</div>
             </div>
                 */}
-            <div className="grid grid-cols-2 h-full w-[550px] bg-white text-navy">
+            <div className="grid grid-cols-2 h-full w-[550px] bg-opacity-98 text-navy">
                     <div className="p-[20px] flex flex-col gap-8 border-violet400">
                         <ul className="sub-menu-ul">Community
                             <li>Our People</li>
