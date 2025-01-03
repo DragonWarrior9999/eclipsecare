@@ -60,6 +60,12 @@ button, div, p{
     color: var(--navy);
     background-color: white;
 }
+button:hover{
+    scale: 108%;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+    
+}
 span{
     padding: 10px 20px;
 }
@@ -90,7 +96,6 @@ span{
 .form-div{
     min-height:70px;
     padding: 6px 0;
-    border: solid violet;
 }
 .form-input{
     background-color: white;

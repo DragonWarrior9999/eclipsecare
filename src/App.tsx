@@ -9,6 +9,8 @@ import MenuHeading from './components/MenuHeading';
 import SubMenu from './components/SubMenu';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
 
 
 
@@ -33,6 +35,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
+          <Route path="/About" element={<About/>}></Route>
+          <Route path="/Services" element={<Services/>}></Route>
         </Routes>
       </Router>
       

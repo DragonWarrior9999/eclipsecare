@@ -25,7 +25,9 @@ export default function SplitBanner({children, className, image, img_src}: props
         console.log(img_src);
         return (
             <div className={`md:grid grid-cols-12 ${className} group overflow-hidden`}>
-                <div className={`col-span-6 bg-[url('${img_src}')] bg-cover bg-no-repeat group-hover:scale-110 transition-transform duration-300`}></div>
+                <div className={`col-span-6 bg-cover bg-no-repeat group-hover:scale-110 transition-transform duration-300`}
+                    style={{ backgroundImage: `url(${img_src})` }}
+                ></div>
                 {/*<div className={`col-span-6 bg-[url('${img_src}')] bg-no-repeat`}></div>*/}
                 <div className="col-span-6 bg-white z-20">
                     <div className="text">
