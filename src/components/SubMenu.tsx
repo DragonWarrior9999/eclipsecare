@@ -1,43 +1,29 @@
+import { ReactNode } from 'react';
 
 
-export default function SubMenu(){
+interface propsSubMenu{
+    left_children: ReactNode;
+    right_children: ReactNode;
+    img_src: string | undefined;
+}
 
-    {/*
-    return(
-        <div className="h-full flex bg-violet-400 w-[800px]">
-            <div className="h-full w-[400px] border border-white"></div>
-            <div className="grid grid-cols-2 grid-rows-4 h-full w-[480px] bg-yellow-400">
-                
-            </div>
-        </div>
-    )*/}
-    {/*height has too match parents height MenuHeading() should deal with position*/}
+export default function SubMenu({left_children, right_children, img_src}: propsSubMenu){
+
     return(
         <div className="flex bg-opacity-98 bg-white w-[850px] h-[380px] rounded-md p-[20px]">
             <div className="h-full w-[300px] rounded-lg p-[15px] pr-[40px]"
             >
                 <div className="h-full w-full border-violet-400 rounded-lg" 
                     style={{
-                        backgroundImage: "url('src/assets/theBoys.jpg')",
+                        backgroundImage: `url('${img_src}')`,
                         backgroundSize: "cover",
                         backgroundPosition: "center"
                     }}
                 ></div>
             </div>
-                {/*
-            <div className="grid grid-cols-2 grid-rows-4 h-full w-[600px] bg-blue-400">
-                <div className=" text">Become a support worker with EclipseCare</div>
-                <div className="flex items-center text">New to support work?</div>
-                <div className="flex items-center text">When and how you get paid</div>
-                <div className="flex items-center text">How to succeed</div>
-                <div className="flex items-center text">Insurance</div>
-                <div className="flex items-center text">Training and education</div>
-                <div className="flex items-center text">Mental health and support</div>
-                <div className="flex items-center text">Tax and Super</div>
-            </div>
-                */}
             <div className="grid grid-cols-2 h-full w-[550px] bg-opacity-98 text-navy">
                     <div className="p-[20px] flex flex-col gap-8 border-violet400">
+                        {/*
                         <ul className="sub-menu-ul">Community
                             <li>Our People</li>
                             <li>Get Involved</li>
@@ -49,13 +35,18 @@ export default function SubMenu(){
                             <li>Events</li>
                             <li>Annual Review</li>
                         </ul>
+                        */}
+                        {left_children}
                     </div>
                     <div className="p-[20px] flex flex-col gap-8 border-violet400">
+                        {/*
                         <ul className="sub-menu-ul">Resources
                             <li>Community resources</li>
                             <li>Resources for Parents</li>
                             <li>Insurance</li>
                         </ul>
+                        */}
+                        {right_children}
                     </div>
             </div>
         </div>

@@ -20,19 +20,73 @@ function App() {
 
   return (
     <div className="h-[7000px]">
-      <Header>
-        <Menu>
-          <MenuHeading label="More">
-            <SubMenu></SubMenu>
-          </MenuHeading>
-          <MenuHeading label="Find Support">
-            <SubMenu></SubMenu>
-          </MenuHeading>
-          <MenuHeading label="Home" children=""></MenuHeading>
-        </Menu>
-      </Header>
 
       <Router>
+
+        <Header>
+          <Menu>
+            <Link to="/"><MenuHeading label="Home" children=""></MenuHeading></Link>
+            <MenuHeading label="Find Support">
+              <SubMenu img_src='src/assets/theBoys.jpg' 
+              left_children={
+                <>
+                  <ul className="sub-menu-ul">Support Coordination
+                      <Link to=""><li>Behaviour Support</li></Link>
+                      <Link to=""><li>Spending Support</li></Link>
+                      <Link to=""><li>Living Support (SIL)</li></Link>
+                  </ul>
+                  <ul className="sub-menu-ul">Other
+                      <Link to=""><li>Skills Development</li></Link>
+                      <Link to=""><li>Transport Management</li></Link>
+                      <Link to=""><li>Gaming and Drug Counselling</li></Link>
+                  </ul>
+                </>
+              } 
+              right_children={
+                <>
+                  <ul className="sub-menu-ul">NDIS
+                      <Link to=""><li>Support Services</li></Link>
+                      <Link to=""><li>FAQs</li></Link>
+                      <Link to=""><li>Pricing</li></Link>
+                  </ul>
+                    <ul className="sub-menu-ul">Activites
+                        <Link to=""><li>Group Activities</li></Link>
+                        <Link to=""><li>Court Assistance</li></Link>
+                  </ul>
+                </>
+              }></SubMenu>
+            </MenuHeading>
+            <MenuHeading label="More">
+              <SubMenu img_src='src/assets/4_people.jpg'
+              left_children={
+                <>
+                  <ul className="sub-menu-ul">Community
+                      <Link to="/About">
+                        <li>Our People</li>
+                      </Link>
+                      <Link to=""><li>Get Involved</li></Link>
+                      <Link to=""><li>Careers</li></Link>
+                      <Link to=""><li>Mentor Stories</li></Link>
+                  </ul>
+                  <ul className="sub-menu-ul">News and Events
+                      <Link to=""><li>Blogs</li></Link>
+                      <Link to=""><li>Events</li></Link>
+                      <Link to=""><li>Annual Review</li></Link>
+                  </ul>
+                </>
+              }
+              right_children={
+                <ul className="sub-menu-ul">Resources
+                    <Link to=""><li>Community resources</li></Link>
+                    <Link to=""><li>Resources for Parents</li></Link>
+                    <Link to=""><li>Insurance</li></Link>
+                </ul>
+              }
+              ></SubMenu>
+            </MenuHeading>
+          </Menu>
+        </Header>
+
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/About" element={<About/>}></Route>

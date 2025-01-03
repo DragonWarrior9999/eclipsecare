@@ -18,7 +18,7 @@ export default function Home(){
                         <div className="p-[20px]">
                             <p>Welcome to EclipseCare</p>
                             <h1>Your Life Our Mission.</h1>
-                            <p className="max-w-[530px]">We're committed to our family and providing the best outcomes possible for participants and their goals in society.</p>
+                            <p className="max-w-[530px] mt-[15px]">We're committed to our family and providing the best outcomes possible for participants and their goals in society.</p>
                         </div>
                         <div className="p-[20px]">
                             <button className="button-light button-sm">Learn More</button>
