@@ -72,9 +72,14 @@ button:hover{
 }
 span{
     padding: 10px 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 .text{
     padding: 20px;
+}
+.article-text{
+    padding: 20px 50px;
 }
 .cards{
     border: solid var(--navy);
@@ -102,7 +107,7 @@ span{
     padding: 6px 0;
 }
 .form-input{
-    background-color: white;
+    background-color: var(--offwhite);
     border: solid var(--primarydark);
     border-radius: 4px;
     padding-left: 12px;
