@@ -99,6 +99,9 @@ span{
     background-color: var(--babyblue);
     border-radius: 4px;
 }
+.ul-dot-points{
+    list-style-type: circle;
+}
 .s4-p{
     padding: 30px 50px;
 }

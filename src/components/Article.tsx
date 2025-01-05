@@ -13,7 +13,7 @@ export default function Article({text, right_col}: propsArticle){
     return (
 
         <Section className="bg-violet-300">
-            <Split left_span="8" right_span="4" responsive="md" className="bg-red-400"
+            <Split left_span="6" right_span="6" responsive="md" className="bg-red-400"
             left={
                 <div className={`article-text min-h-[300px] border border-yellow-300`}>
                     {text}
