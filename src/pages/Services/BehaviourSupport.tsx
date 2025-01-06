@@ -8,7 +8,9 @@ import Form from '../../components/Form';
 import HeroV2 from "../../components/HeroV2";
 import TwoCards from "../../components/twocards";
 
-
+import img_living from "../../assets/living-support.jpg";
+import img_behaviour from "../../assets/behaviour-support.jpg";
+import img_spending from "../../assets/spending-support.jpg";
 
 export default function BehaviourSupport(){
 
@@ -23,7 +25,7 @@ export default function BehaviourSupport(){
             </HeroV2>
             <Section className="bg-violet-300">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`col-span-8 min-h-[500px] bg-yellow-400`}>
+                    <div className={`col-span-9 min-h-[500px] bg-yellow-400`}>
                         <div className={`article-text min-h-[300px] border border-yellow-300`}>
                             <h2>Promoting Positive Change</h2>
                             <br/>
@@ -33,12 +35,24 @@ export default function BehaviourSupport(){
 
                         </div>
                     </div>
-                    <div className={`col-span-4 border border-pink-400`}>
-                        
+                    <div className={`col-span-3 border border-pink-400`}
+                    style={{
+                        backgroundImage: `url(${img_behaviour})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center'
+                    }}
+                    >
                     </div>
                 </div>
             </Section>
             <Section className="min-h-[400px]">
+                <TwoCards 
+                img_left={img_living}
+                heading_left="Living Support"
+                img_right={img_spending}
+                heading_right="Spending Support"
+                ></TwoCards>
             </Section>
         </>
 

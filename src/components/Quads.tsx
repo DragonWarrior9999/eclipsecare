@@ -10,10 +10,10 @@ interface propsQuads{
 
 }
 
-export default function Quads({top_left, top_right, bottom_right, bottom_left} : propsQuads){
+export default function Quads({className, top_left, top_right, bottom_right, bottom_left} : propsQuads){
 
     return(
-        <div className="md:grid grid-cols-2 grid-rows-2">
+        <div className={`${className} md:grid grid-cols-2 grid-rows-2`}>
             <div className="">
                 {top_left}
             </div>

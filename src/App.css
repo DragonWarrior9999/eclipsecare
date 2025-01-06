@@ -33,6 +33,11 @@ h3{
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
 }
+h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+}
 button, div, p{
     font-size: 1.8rem;
 }
@@ -79,7 +84,7 @@ span{
     padding: 20px;
 }
 .article-text{
-    padding: 20px 50px;
+    padding: 30px 70px;
 }
 .cards{
     border: solid var(--navy);

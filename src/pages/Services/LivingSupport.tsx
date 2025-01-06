@@ -10,6 +10,7 @@ import Article from "../../components/Article";
 import TwoCards from "../../components/twocards";
 import img_living from "../../assets/living-support.jpg";
 import img_behaviour from "../../assets/behaviour-support.jpg";
+import img_spending from "../../assets/spending-support.jpg";
 
 
 export default function LivingSupport(){
@@ -26,7 +27,7 @@ export default function LivingSupport(){
             </HeroV2>
             <Section className="">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`article-text col-span-8 min-h-[500px] bg-yellow-400`}>
+                    <div className={`article-text col-span-9 min-h-[500px] bg-yellow-400`}>
                         <h3>What is SIL?</h3>
                         <br/>
                         <p>Supported Independent Living refers to funding provided by the NDIS to assist participants with disabilities to live independently in their own homes or shared living arrangements. It covers support for daily tasks and activities, enabling individuals to build skills and live as autonomously as possible.</p>
@@ -45,15 +46,23 @@ export default function LivingSupport(){
                             <li>- Their goals and aspirations outlined in the NDIS plan.</li>
                         </ul>
                     </div>
-                    <div className={`col-span-4 border border-pink-400`}>
+                    <div className={`col-span-3 border border-pink-400`}
+                    style={{
+                        backgroundImage: `url(${img_living})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center'
+                    }}
+                    >
+                        
                     </div>
                 </div>
             </Section>
             <Section className="min-h-[400px]">
                 <TwoCards 
-                img_left={img_living}
-                heading_left="Living Support"
-                img_right={img_behaviour}
+                img_left={img_behaviour}
+                heading_left="Behaviour Support"
+                img_right={img_spending}
                 heading_right="Spending Support"
                 ></TwoCards>
             </Section>
