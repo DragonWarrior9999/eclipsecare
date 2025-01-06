@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom';
 import Quads from '../../components/Quads';
 import Form from '../../components/Form';
 import HeroV2 from "../../components/HeroV2";
+import Article from "../../components/Article";
 import TwoCards from "../../components/TwoCards";
-
-
 
 import img_behaviour from '../../assets/behaviour-support.jpg';
 import img_living from '../../assets/living-support.jpg';
@@ -20,7 +19,7 @@ import img_court from '../../assets/court-assistance.jpg';
 import img_group from '../../assets/4_people.jpg';
 
 
-export default function BehaviourSupport(){
+export default function Transport(){
 
 
     return(
@@ -28,37 +27,45 @@ export default function BehaviourSupport(){
             <HeroV2>
                 <div className="text">
                     <p>Our services</p>
-                    <h1>Behaviour Support.</h1>
-                    <p>Compassionate care for lasting, positive outcomes.</p>
+                    <h1>Transport Management.</h1>
+                    <p>Your Journey, Our Priority.</p>
                 </div>
             </HeroV2>
-            <Section className="pt-[40px] pb-[30px]">
+            <Section className="pb-[30px] pt-[30px] text-navy">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`col-span-9 min-h-[500px] `}>
-                        <div className={`article-text min-h-[300px] border`}>
-                            <h2>Promoting Positive Change</h2>
-                            <br/>
-                            <p>Our Behavior Support services are designed to empower individuals with disabilities to lead more fulfilling and independent lives by addressing challenging behaviors in a supportive and person-centered way. We work collaboratively with participants, their families, and support teams to develop individualized behavior support plans that focus on understanding the underlying causes of behaviors and implementing strategies to foster positive change. Our team of qualified specialists is dedicated to creating safe and respectful environments where participants can thrive.</p>
-                            <br/>
-                            <p className="">At the heart of our approach is a commitment to evidence-based practices that promote skill development, emotional regulation, and community inclusion. We provide ongoing training, guidance, and support to ensure these strategies are effectively implemented and adapted as needed. Whether it’s through reducing barriers to daily activities, improving communication, or enhancing relationships, our Behavior Support services are tailored to help participants achieve their unique goals and reach their full potential.</p>
-
-                        </div>
+                    <div className={`article-text col-span-9 min-h-[500px] `}>
+                        <h2>How does transport management work?</h2>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat eget eros maximus cursus. Nunc vel turpis eget dui efficitur tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at efficitur elit.</p>
+                        <br/>
+                        <ul><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <br/>
+                            <li>- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>- Vivamus aliquet nunc sit amet lorem suscipit, id ultrices libero feugiat.</li>
+                            <li>- Integer faucibus nisl vel purus laoreet, nec hendrerit mi pellentesque.</li>
+                        </ul>
+                        <br/>
+                        <ul><h3>Integer eget consequat nunc, at efficitur elit.</h3>
+                        <br/>
+                        Nam auctor tortor id felis tempus, sit amet viverra velit consequat. Donec aliquam risus vel risus congue, vitae gravida elit accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat eget eros maximus cursus. Nunc vel turpis eget dui efficitur tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at efficitur elit.
+                        </ul>
                     </div>
-                    <div className={`col-span-3 border`}
+                    <div className={`col-span-3`}
                     style={{
-                        backgroundImage: `url(${img_behaviour})`,
+                        backgroundImage: `url(${img_living})`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center'
                     }}
                     >
+                        
                     </div>
                 </div>
             </Section>
-            <Section className="min-h-[400px] bg-babyblue">
+            <Section className="min-h-[400px] bg-babyblue text-navy">
                 <TwoCards 
-                img_left={img_living}
-                heading_left="Living Support"
+                img_left={img_behaviour}
+                heading_left="Behaviour Support"
                 img_right={img_spending}
                 heading_right="Spending Support"
                 ></TwoCards>

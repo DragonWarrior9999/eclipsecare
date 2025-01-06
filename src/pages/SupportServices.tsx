@@ -51,7 +51,7 @@ export default function SupportServices(){
                         <br/>
                         <p>NDIS services are provided by businesses, organizations, or individuals called NDIS providers. Providers like EclipseCare help with the supports in a participant's NDIS plan. Participants can choose the providers that suit them best.</p>                            
                     </div>
-                    <div className={`col-span-3 border border-pink-400`}
+                    <div className={`col-span-3`}
                     style={{
                         backgroundImage: `url(${img_living})`,
                         backgroundSize: 'cover',
@@ -62,7 +62,7 @@ export default function SupportServices(){
                     </div>
                 </div>
             </Section>
-            <Section className="min-h-[300px] bg-orange-400">
+            <Section className="min-h-[300px]">
                 <p>EclipseCare Services</p>
                 <h1>Our Services.</h1>
                 <Split left_span="6" right_span="6" className="w-full gap-6" responsive="md"

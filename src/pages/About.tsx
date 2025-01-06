@@ -3,6 +3,8 @@ import img_hero from '../assets/gradient-sunset.png'
 import Section from "../components/Section"
 import Split from "../components/Split"
 
+import img_pink_jacket from '../assets/pink-jacket.png';
+
 export default function About(){
 
     return(
@@ -18,19 +20,10 @@ export default function About(){
                 <span className="ml-[10px]">Discover More</span>
             </div>
         </Hero>
-        <Section className="min-h-[300px] mt-[30px]">
-            <Split left_span="8" right_span="4" responsive="md" className=""
-                right={
-                    <div className="border min-h-[450px] bg-violet-400 rounded-lg"
-                    style={{
-                        backgroundImage: 'url(src/assets/pink-jacket.png',
-                        backgroundSize: 'contain',
-                        backgroundRepeat: 'no-repeat'
-                    }}
-                    ></div>
-                }
-                left={
-                    <div className="p-[40px]">
+
+        <Section className="pb-[30px] pt-[30px] text-navy">
+            <div className={`md:grid grid-cols-12 `}>
+                <div className={`article-text col-span-7 min-h-[500px] `}>
                         <h2>Family care.</h2>
                         <br/>
                         <p>We are a professional family run disability company with expertise in mental health, drug and alcohol counselling and complex physical disabilities.</p>
@@ -42,10 +35,19 @@ export default function About(){
                             <li>- sajkdn asjj djskdan jaskd sdjjj js jsd jssjakjs.</li>
                             <li>- asdjn asj asdjsndajsnd asjdas asddjknj sjassdnj asjdknasdsa.</li>
                         </ul>
-                    </div>
-                }
-            ></Split>
+                </div>
+                <div className={`col-span-5`}
+                    style={{
+                        backgroundImage: `url(${img_pink_jacket}`,
+                        backgroundSize: 'contain',
+                        backgroundRepeat: 'no-repeat'
+                    }}
+                >
+                        
+                </div>
+            </div>
         </Section>
+
         <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
             <div className="bg-white p-[60px]">
                 <div>

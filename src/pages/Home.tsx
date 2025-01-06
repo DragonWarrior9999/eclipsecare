@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Quads from '../components/Quads';
 import Form from '../components/Form';
 import img_the_boys from '../assets/theBoys.jpg';
+import img_hero from '../assets/hero-img.png';
+import img_laptop from '../assets/laptop-lady.jpg';
 
 export default function Home(){
 
@@ -26,7 +28,15 @@ export default function Home(){
                         </div>
                     </div>
                     <div className="w-full lg:col-span-5 relative hidden lg:block">
-                        <div className="bg-[url('src/assets/hero-img.png')] top-[20px] right-[-40px] relative min-h-[460px] min-w-[590px] bg-no-repeat rounded-lg"></div>
+                        <div className=" top-[20px] right-[-40px] relative min-h-[460px] min-w-[590px] rounded-lg"
+                            style={{
+
+                                backgroundImage: `url(${img_hero})`,
+                                backgroundSize: 'contain',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center'
+                            }}
+                        ></div>
                     </div>
                 </div>
             </Section>
@@ -98,7 +108,15 @@ export default function Home(){
                         } 
                         top_right={
                             <div className="h-full">
-                                <div className="mt-[10px] border border-orange rounded-lg h-[250px] bg-cover bg-right bg-no-repeat bg-[url('src/assets/laptop-lady.jpg')]"></div>
+                                <div className="mt-[10px] border border-orange rounded-lg h-[250px]"
+                                    style={{
+
+                                        backgroundImage: `url(${img_laptop})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'right'
+                            }}
+                                ></div>
                             </div>
                         } 
                         bottom_left={

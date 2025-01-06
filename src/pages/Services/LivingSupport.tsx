@@ -7,10 +7,16 @@ import Quads from '../../components/Quads';
 import Form from '../../components/Form';
 import HeroV2 from "../../components/HeroV2";
 import Article from "../../components/Article";
-import TwoCards from "../../components/twocards";
-import img_living from "../../assets/living-support.jpg";
-import img_behaviour from "../../assets/behaviour-support.jpg";
-import img_spending from "../../assets/spending-support.jpg";
+import TwoCards from "../../components/TwoCards";
+
+import img_behaviour from '../../assets/behaviour-support.jpg';
+import img_living from '../../assets/living-support.jpg';
+import img_spending from '../../assets/spending-support.jpg';
+import img_skills from '../../assets/skills-dev.jpg';
+import img_gaming from '../../assets/gaming-drug.jpg';
+import img_transport from '../../assets/transport-management.jpg';
+import img_court from '../../assets/court-assistance.jpg';
+import img_group from '../../assets/4_people.jpg';
 
 
 export default function LivingSupport(){
@@ -20,14 +26,14 @@ export default function LivingSupport(){
         <>
             <HeroV2>
                 <div className="text">
-                    <p>Supported Living Support (SIL)</p>
+                    <p>Our services</p>
                     <h1>Living Support.</h1>
-                    <p>as asdsa ds ds ds asd sad as das dadsdsadas sad</p>
+                    <p>Supported Living Support (SIL)</p>
                 </div>
             </HeroV2>
-            <Section className="">
+            <Section className="pb-[30px] pt-[30px] text-navy">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`article-text col-span-9 min-h-[500px] bg-yellow-400`}>
+                    <div className={`article-text col-span-9 min-h-[500px] `}>
                         <h3>What is SIL?</h3>
                         <br/>
                         <p>Supported Independent Living refers to funding provided by the NDIS to assist participants with disabilities to live independently in their own homes or shared living arrangements. It covers support for daily tasks and activities, enabling individuals to build skills and live as autonomously as possible.</p>
@@ -46,7 +52,7 @@ export default function LivingSupport(){
                             <li>- Their goals and aspirations outlined in the NDIS plan.</li>
                         </ul>
                     </div>
-                    <div className={`col-span-3 border border-pink-400`}
+                    <div className={`col-span-3`}
                     style={{
                         backgroundImage: `url(${img_living})`,
                         backgroundSize: 'cover',
@@ -58,13 +64,139 @@ export default function LivingSupport(){
                     </div>
                 </div>
             </Section>
-            <Section className="min-h-[400px]">
+            <Section className="min-h-[400px] bg-babyblue text-navy">
                 <TwoCards 
                 img_left={img_behaviour}
                 heading_left="Behaviour Support"
                 img_right={img_spending}
                 heading_right="Spending Support"
                 ></TwoCards>
+            </Section>
+            <Section className="min-h-[300px]">
+                <p>EclipseCare Services</p>
+                <h1>Our Services.</h1>
+                <Split left_span="6" right_span="6" className="w-full gap-6" responsive="md"
+                left={
+                    <Quads className="gap-6"
+                        top_left={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_behaviour})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Behaviour Support</h4>
+                            </div>
+                        }
+                        top_right={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_living})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Living Support</h4>
+                            </div>
+                        }
+                        bottom_left={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_skills})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Skills Development</h4>
+                            </div>
+                        }
+                        bottom_right={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_transport})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Transport Managment</h4>
+                            </div>
+                        }
+                    ></Quads>
+                }
+                right={
+                    <Quads className="gap-6"
+                        top_left={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_spending})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Spending Support</h4>
+                            </div>
+                        }
+                        top_right={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_group})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Group Activities</h4>
+                            </div>
+                        }
+                        bottom_left={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_court})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Court Assistance</h4>
+                            </div>
+                        }
+                        bottom_right={
+                            <div className="border border-yellow-400 min-h-[300px] cards">
+                                <div className="border w-full min-h-[180px]"
+                                    style={{
+                                        backgroundImage: `url(${img_gaming})`,
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center'
+                                    }}
+                                >
+                                </div>
+                                <h4>Gaming and Drug Counselling</h4>
+                            </div>
+                        }
+                    ></Quads>
+                }
+                ></Split>
             </Section>
         </>
 

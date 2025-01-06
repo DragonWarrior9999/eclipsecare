@@ -14,14 +14,20 @@ import Services from './pages/Services/Services';
 import BehaviourSupport from './pages/Services/BehaviourSupport';
 import LivingSupport from './pages/Services/LivingSupport';
 import SpendingSupport from './pages/Services/SpendingSupport';
+import SkillsDev from './pages/Services/SkillsDev';
+import Transport from './pages/Services/Transport';
 import GetInvolved from './pages/GetInvolved';
-import Careers from './pages/careers';
+import Careers from './pages/Careers';
 import Blogs from './pages/Blogs';
 import Events from './pages/Events';
 import SupportServices from './pages/SupportServices';
 import Faqs from './pages/Faqs';
+import GamingDrug from './pages/Services/GamingDrug';
+import CourtSupport from './pages/Services/courtsupport';
+import GroupActivity from './pages/Services/GroupActivity';
 
-
+import img_sub_menu_1 from './assets/4_people.jpg';
+import img_sub_menu_2 from './assets/theBoys.jpg';
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -35,7 +41,7 @@ function App() {
           <Menu>
             <Link to="/"><MenuHeading label="Home" children=""></MenuHeading></Link>
             <MenuHeading label="Find Support">
-              <SubMenu img_src='src/assets/theBoys.jpg' 
+              <SubMenu img_src={img_sub_menu_2}
               left_children={
                 <>
                   <ul className="sub-menu-ul">Support Coordination
@@ -44,9 +50,9 @@ function App() {
                       <Link to="/Services/LivingSupport"><li>Living Support (SIL)</li></Link>
                   </ul>
                   <ul className="sub-menu-ul">Other
-                      <Link to=""><li>Skills Development</li></Link>
-                      <Link to=""><li>Transport Management</li></Link>
-                      <Link to=""><li>Gaming and Drug Counselling</li></Link>
+                      <Link to="/Services/SkillsDev"><li>Skills Development</li></Link>
+                      <Link to="/Services/TransportManagement"><li>Transport Management</li></Link>
+                      <Link to="/Services/GamingCounselling"><li>Gaming and Drug Counselling</li></Link>
                   </ul>
                 </>
               } 
@@ -58,14 +64,14 @@ function App() {
                       <Link to=""><li>Pricing</li></Link>
                   </ul>
                     <ul className="sub-menu-ul">Activites
-                        <Link to=""><li>Group Activities</li></Link>
-                        <Link to=""><li>Court Assistance</li></Link>
+                        <Link to="/Services/GroupActivity"><li>Group Activities</li></Link>
+                        <Link to="/Services/CourtSupport"><li>Court Assistance</li></Link>
                   </ul>
                 </>
               }></SubMenu>
             </MenuHeading>
             <MenuHeading label="More">
-              <SubMenu img_src='src/assets/4_people.jpg'
+              <SubMenu img_src={img_sub_menu_1}
               left_children={
                 <>
                   <ul className="sub-menu-ul">Community
@@ -108,6 +114,11 @@ function App() {
           <Route path="/Latest/Events" element={<Events/>}></Route>
           <Route path="/NDIS/SupportServices" element={<SupportServices/>}></Route>
           <Route path="/NDIS/Faqs" element={<Faqs/>}></Route>
+          <Route path="/Services/SkillsDev" element={<SkillsDev/>}></Route>
+          <Route path="/Services/TransportManagement" element={<Transport/>}></Route>
+          <Route path="/Services/GamingCounselling" element={<GamingDrug/>}></Route>
+          <Route path="/Services/CourtSupport" element={<CourtSupport/>}></Route>
+          <Route path="/Services/GroupActivity" element={<GroupActivity/>}></Route>
         </Routes>
       </Router>
       
