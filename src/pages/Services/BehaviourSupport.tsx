@@ -39,13 +39,6 @@ export default function BehaviourSupport(){
                 </div>
             </Section>
             <Section className="min-h-[400px]">
-                <TwoCards 
-                right={
-                    <div></div>
-                }
-                left={
-                    <div></div>
-                }></TwoCards>
             </Section>
         </>
 

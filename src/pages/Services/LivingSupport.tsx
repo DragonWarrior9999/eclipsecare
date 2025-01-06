@@ -54,7 +54,7 @@ export default function LivingSupport(){
                 img_left={img_living}
                 heading_left="Living Support"
                 img_right={img_behaviour}
-                heading_right="Living Support"
+                heading_right="Spending Support"
                 ></TwoCards>
             </Section>
         </>

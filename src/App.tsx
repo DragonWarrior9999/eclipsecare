@@ -14,8 +14,12 @@ import Services from './pages/Services/Services';
 import BehaviourSupport from './pages/Services/BehaviourSupport';
 import LivingSupport from './pages/Services/LivingSupport';
 import SpendingSupport from './pages/Services/SpendingSupport';
-
-
+import GetInvolved from './pages/GetInvolved';
+import Careers from './pages/careers';
+import Blogs from './pages/Blogs';
+import Events from './pages/Events';
+import SupportServices from './pages/SupportServices';
+import Faqs from './pages/Faqs';
 
 
 
@@ -49,8 +53,8 @@ function App() {
               right_children={
                 <>
                   <ul className="sub-menu-ul">NDIS
-                      <Link to=""><li>Support Services</li></Link>
-                      <Link to=""><li>FAQs</li></Link>
+                      <Link to="NDIS/SupportServices"><li>Support Services</li></Link>
+                      <Link to="NDIS/Faqs"><li>FAQs</li></Link>
                       <Link to=""><li>Pricing</li></Link>
                   </ul>
                     <ul className="sub-menu-ul">Activites
@@ -68,13 +72,13 @@ function App() {
                       <Link to="/About">
                         <li>Our People</li>
                       </Link>
-                      <Link to=""><li>Get Involved</li></Link>
-                      <Link to=""><li>Careers</li></Link>
+                      <Link to="/Community/GetInvolved"><li>Get Involved</li></Link>
+                      <Link to="/Community/Careers"><li>Careers</li></Link>
                       <Link to=""><li>Mentor Stories</li></Link>
                   </ul>
                   <ul className="sub-menu-ul">News and Events
-                      <Link to=""><li>Blogs</li></Link>
-                      <Link to=""><li>Events</li></Link>
+                      <Link to="/Latest/Blogs"><li>Blogs</li></Link>
+                      <Link to="/Latest/Events"><li>Events</li></Link>
                       <Link to=""><li>Annual Review</li></Link>
                   </ul>
                 </>
@@ -98,6 +102,12 @@ function App() {
           <Route path="/Services/BehaviourSupport" element={<BehaviourSupport/>}></Route>
           <Route path="/Services/LivingSupport" element={<LivingSupport/>}></Route>
           <Route path="/Services/SpendingSupport" element={<SpendingSupport/>}></Route>
+          <Route path="/Community/GetInvolved" element={<GetInvolved/>}></Route>
+          <Route path="/Community/Careers" element={<Careers/>}></Route>
+          <Route path="/Latest/Blogs" element={<Blogs/>}></Route>
+          <Route path="/Latest/Events" element={<Events/>}></Route>
+          <Route path="/NDIS/SupportServices" element={<SupportServices/>}></Route>
+          <Route path="/NDIS/Faqs" element={<Faqs/>}></Route>
         </Routes>
       </Router>
       

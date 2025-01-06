@@ -14,13 +14,13 @@ export default function HeroV2({children}: propsHero){
 
         <>
             <div className="bg-babyblue h-[120px] w-screen">THIS IS THE HOME PAGE</div>
-            <Section className="bg-babyblue min-h-[450px] overflow-hidden">
+            <Section className="bg-babyblue min-h-[380px] overflow-hidden">
                 <div className="grid h-full lg:grid-cols-12">
                     <div className="w-full mt-[70px] lg:col-span-7 text-navy border">
                         {children}
                     </div>
                     <div className="w-full lg:col-span-5 relative hidden lg:block">
-                        <img src={logo} className={`top-[-10px] right-[-60px] absolute min-w-[620px] bg-no-repeat rounded-lg border`}
+                        <img src={logo} className={`top-[-10px] right-[0] absolute min-w-[500px] bg-no-repeat rounded-lg border`}
                         ></img>
                     </div>
                 </div>
