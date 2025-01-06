@@ -21,9 +21,11 @@ import Faqs from './pages/Faqs';
 import GamingDrug from './pages/Services/GamingDrug';
 //import CourtSupport from './pages/Services/courtsupport';
 import GroupActivity from './pages/Services/GroupActivity';
+import ScrollToTop from './components/ScrollTop';
 
 import img_sub_menu_1 from './assets/4_people.jpg';
 import img_sub_menu_2 from './assets/theBoys.jpg';
+import CourtSupport from './pages/Services/CourtSupport';
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -96,7 +98,8 @@ function App() {
             </MenuHeading>
           </Menu>
         </Header>
-
+              
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/About" element={<About/>}></Route>
@@ -114,6 +117,7 @@ function App() {
           <Route path="/Services/TransportManagement" element={<Transport/>}></Route>
           <Route path="/Services/GamingCounselling" element={<GamingDrug/>}></Route>
           <Route path="/Services/GroupActivity" element={<GroupActivity/>}></Route>
+          <Route path="/Services/CourtSupport" element={<CourtSupport/>}></Route>
         </Routes>
       </Router>
       

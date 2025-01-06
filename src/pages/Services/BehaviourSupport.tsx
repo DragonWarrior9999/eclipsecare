@@ -2,6 +2,7 @@ import Section from '../../components/Section';
 import HeroV2 from "../../components/HeroV2";
 import TwoCards from "../../components/TwoCards";
 import Services from "../../components/Services";
+import Footer from '../../components/Footer';
 
 
 
@@ -45,15 +46,16 @@ export default function BehaviourSupport(){
                     </div>
                 </div>
             </Section>
+            <Services></Services>
             <Section className="min-h-[400px] bg-babyblue">
                 <TwoCards 
                 img_left={img_living}
-                heading_left="Living Support"
+                heading_left="Some other"
                 img_right={img_spending}
-                heading_right="Spending Support"
+                heading_right="Links"
                 ></TwoCards>
             </Section>
-            <Services></Services>
+            <Footer></Footer>
         </>
 
     )

@@ -64,7 +64,7 @@ export default function Header({children}: propsHeader){
         <div className={`z-50 w-screen bg-white fixed transform transition duration-2 ${hideHeader? '-translate-y-[500px]': 'translate-y-0'}`}>
             <Section className={`transition-all duration-400 ${reducedHeader? 'h-[100px]': 'h-[130px]'}`}
             >
-                <div className="flex items-center justify-between w-full h-full w-full">
+                <div className="flex items-center justify-between w-full h-full">
                         <div className={`transition-all duration-300 border border-white w-full max-h-[100px] h-full 
                             ${reducedHeader? 'max-w-[200px]' : 'max-w-[300px]'}
                             `}

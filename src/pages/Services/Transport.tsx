@@ -2,11 +2,12 @@ import Section from '../../components/Section';
 import HeroV2 from "../../components/HeroV2";
 import TwoCards from "../../components/TwoCards";
 import Services from "../../components/Services";
+import Footer from '../../components/Footer';
 
 
 import img_behaviour from '../../assets/behaviour-support.jpg';
-import img_living from '../../assets/living-support.jpg';
 import img_spending from '../../assets/spending-support.jpg';
+import img_transport from '../../assets/transport-management.jpg';
 
 
 export default function Transport(){
@@ -42,25 +43,26 @@ export default function Transport(){
                     </div>
                     <div className={`col-span-3`}
                     style={{
-                        backgroundImage: `url(${img_living})`,
+                        backgroundImage: `url(${img_transport})`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center'
+                        backgroundPosition: 'right'
                     }}
                     >
                         
                     </div>
                 </div>
             </Section>
+            <Services></Services>
             <Section className="min-h-[400px] bg-babyblue text-navy">
                 <TwoCards 
                 img_left={img_behaviour}
-                heading_left="Behaviour Support"
+                heading_left="Some other"
                 img_right={img_spending}
-                heading_right="Spending Support"
+                heading_right="Link"
                 ></TwoCards>
             </Section>
-            <Services></Services>
+            <Footer></Footer>
         </>
 
     )

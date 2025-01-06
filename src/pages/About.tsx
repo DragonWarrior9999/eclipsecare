@@ -2,6 +2,7 @@ import Hero from "../components/Hero"
 import img_hero from '../assets/gradient-sunset.png'
 import Section from "../components/Section"
 import Split from "../components/Split"
+import Footer from "../components/Footer"
 
 import img_pink_jacket from '../assets/pink-jacket.png';
 
@@ -74,6 +75,7 @@ export default function About(){
                 />
             </div>
         </Section>
+        <Footer></Footer>
         </>
     )
 }

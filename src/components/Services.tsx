@@ -2,6 +2,7 @@
 import Section from '../components/Section';
 import Split from '../components/Split';
 import Quads from '../components/Quads';
+import { Link } from 'react-router-dom';
 
 import img_behaviour from '../assets/behaviour-support.jpg';
 import img_living from '../assets/living-support.jpg';
@@ -24,7 +25,7 @@ export default function Services(){
             left={
                 <Quads className="gap-6"
                     top_left={
-                        <div className="cards-services min-h-[300px]">
+                        <Link to="/Services/BehaviourSupport"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_behaviour})`,
@@ -36,9 +37,10 @@ export default function Services(){
                             </div>
                             <h4>Behaviour Support</h4>
                         </div>
+                        </Link>
                     }
                     top_right={
-                        <div className="min-h-[300px] cards-services">
+                        <Link to="/Services/LivingSupport"><div className="min-h-[300px] cards-services">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_living})`,
@@ -50,9 +52,10 @@ export default function Services(){
                             </div>
                             <h4>Living Support</h4>
                         </div>
+                        </Link>
                     }
                     bottom_left={
-                        <div className="cards-services min-h-[300px]">
+                        <Link to="/Services/SkillsDev"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_skills})`,
@@ -64,9 +67,11 @@ export default function Services(){
                             </div>
                             <h4>Skills Development</h4>
                         </div>
+                        </Link>
                     }
                     bottom_right={
-                        <div className="cards-services min-h-[300px]">
+
+                        <Link to="/Services/TransportManagement"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_transport})`,
@@ -78,13 +83,14 @@ export default function Services(){
                             </div>
                             <h4>Transport Managment</h4>
                         </div>
+                        </Link>
                     }
                 ></Quads>
             }
             right={
                 <Quads className="gap-6"
                     top_left={
-                        <div className="cards-services min-h-[300px]">
+                        <Link to="/Services/SpendingSupport"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_spending})`,
@@ -96,9 +102,10 @@ export default function Services(){
                             </div>
                             <h4>Spending Support</h4>
                         </div>
+                        </Link>
                     }
                     top_right={
-                        <div className="cards-services min-h-[300px]">
+                        <Link to="/Services/GroupActivity"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_group})`,
@@ -110,9 +117,10 @@ export default function Services(){
                             </div>
                             <h4>Group Activities</h4>
                         </div>
+                        </Link>
                     }
                     bottom_left={
-                        <div className="cards-services min-h-[300px]">
+                        <Link to="/Services/CourtSupport"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_court})`,
@@ -124,9 +132,10 @@ export default function Services(){
                             </div>
                             <h4>Court Assistance</h4>
                         </div>
+                        </Link>
                     }
                     bottom_right={
-                        <div className="cards-services min-h-[300px]">
+                        <Link to="/Services/GamingCounselling"><div className="cards-services min-h-[300px]">
                             <div className="border w-full min-h-[180px]"
                                 style={{
                                     backgroundImage: `url(${img_gaming})`,
@@ -138,6 +147,7 @@ export default function Services(){
                             </div>
                             <h4>Gaming and Drug Counselling</h4>
                         </div>
+                        </Link>
                     }
                 ></Quads>
             }

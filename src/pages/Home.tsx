@@ -3,8 +3,12 @@ import SplitBanner from '../components/SplitBanner';
 import Split from '../components/Split';
 import Quads from '../components/Quads';
 import Form from '../components/Form';
+import Footer from '../components/Footer';
+
+
 import img_hero from '../assets/hero-img.png';
 import img_laptop from '../assets/laptop-lady.jpg';
+import img_smiling from '../assets/smiling-women.jpg';
 
 export default function Home(){
 
@@ -61,7 +65,7 @@ export default function Home(){
             </Section>
             <Section className="min-h-[400px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
-                    <SplitBanner img_src="src/assets/smiling-women.jpg" image="left" className="bg-white text-navy rounded-lg min-h-[320px] ">
+                    <SplitBanner img_src={img_smiling} image="left" className="bg-white text-navy rounded-lg min-h-[320px] ">
                         <h1 className="mt-[30px]">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
                         {/*MAKE THIS A BIGG AHH BUTTON */}
@@ -102,7 +106,7 @@ export default function Home(){
                         top_left={
                             <div className="text">
                                 <h2>Accessing disability support services with NDIS funding</h2>
-                                <p className="mt-[20px] text-[2rem] font-semibold">Anyone with self-managed or plan-managed NDIS funding can access disability support services on Mable.</p>
+                                <p className="mt-[20px] text-[2rem] font-semibold">Anyone with self-managed or plan-managed NDIS funding can access disability support services on EclipseCare.</p>
                             </div>
                         } 
                         top_right={
@@ -120,14 +124,14 @@ export default function Home(){
                         } 
                         bottom_left={
                             <div className="text">
-                                <h3>How to use NDIS disability support funding on Mable</h3>
-                                <p>If you are self-managed or plan-managed you can use your funds to book a disability support worker directly through your Mable account. When setting up your account, just provide Mable with your funding details and we will handle the rest. Learn more about using your NDIS funding on Mable.</p>
+                                <h3>How to use NDIS disability support funding on EclipseCare.</h3>
+                                <p>If you are self-managed or plan-managed you can use your funds to book a disability support worker directly through your EclipseCare account. When setting up your account, just provide EclipseCare with your funding details and we will handle the rest. Learn more about using your NDIS funding on EclipseCare.</p>
                             </div>
                         } 
                         bottom_right={
                             <div className="text">
-                                <h3>What disability support can be booked on Mable?</h3>
-                                <p>Depending on your NDIS funding limits, you can hire disability who can provide services including: gardening, cleaning, cooking, transport, personal care, nursing services, speech therapy, occupational therapy, physiotherapy, and psychology support. Learn more about the services available on Mable.</p>
+                                <h3>What disability support can be booked on EclipseCare?</h3>
+                                <p>Depending on your NDIS funding limits, you can hire disability who can provide services including: gardening, cleaning, cooking, transport, personal care, nursing services, speech therapy, occupational therapy, physiotherapy, and psychology support. Learn more about the services available on EclipseCare.</p>
                             </div>
                         } 
                     ></Quads>
@@ -167,6 +171,7 @@ export default function Home(){
                 </div>
                 
             </Section>
+            <Footer></Footer>
         </>
     )
 }
