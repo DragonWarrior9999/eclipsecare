@@ -1,14 +1,10 @@
 import Section from '../components/Section';
 import SplitBanner from '../components/SplitBanner';
 import Split from '../components/Split';
-import { Link } from 'react-router-dom';
 import Quads from '../components/Quads';
 import Form from '../components/Form';
-import img_the_boys from '../assets/theBoys.jpg';
 import img_hero from '../assets/hero-img.png';
 import img_laptop from '../assets/laptop-lady.jpg';
-import Box from '../components/Box';
-import Access from '../components/Accessibility';
 
 export default function Home(){
 

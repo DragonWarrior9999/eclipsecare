@@ -1,10 +1,4 @@
-import Hero from "../../components/Hero"
 import Section from '../../components/Section';
-import SplitBanner from '../../components/SplitBanner';
-import Split from '../../components/Split';
-import { Link } from 'react-router-dom';
-import Quads from '../../components/Quads';
-import Form from '../../components/Form';
 import HeroV2 from "../../components/HeroV2";
 import TwoCards from "../../components/TwoCards";
 import Services from "../../components/Services";
@@ -14,11 +8,6 @@ import Services from "../../components/Services";
 import img_behaviour from '../../assets/behaviour-support.jpg';
 import img_living from '../../assets/living-support.jpg';
 import img_spending from '../../assets/spending-support.jpg';
-import img_skills from '../../assets/skills-dev.jpg';
-import img_gaming from '../../assets/gaming-drug.jpg';
-import img_transport from '../../assets/transport-management.jpg';
-import img_court from '../../assets/court-assistance.jpg';
-import img_group from '../../assets/4_people.jpg';
 
 
 export default function BehaviourSupport(){

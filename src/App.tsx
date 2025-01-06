@@ -1,8 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Section from './components/Section';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import MenuHeading from './components/MenuHeading';
@@ -23,7 +19,7 @@ import Events from './pages/Events';
 import SupportServices from './pages/SupportServices';
 import Faqs from './pages/Faqs';
 import GamingDrug from './pages/Services/GamingDrug';
-import CourtSupport from './pages/Services/courtsupport';
+//import CourtSupport from './pages/Services/courtsupport';
 import GroupActivity from './pages/Services/GroupActivity';
 
 import img_sub_menu_1 from './assets/4_people.jpg';
@@ -117,7 +113,6 @@ function App() {
           <Route path="/Services/SkillsDev" element={<SkillsDev/>}></Route>
           <Route path="/Services/TransportManagement" element={<Transport/>}></Route>
           <Route path="/Services/GamingCounselling" element={<GamingDrug/>}></Route>
-          <Route path="/Services/CourtSupport" element={<CourtSupport/>}></Route>
           <Route path="/Services/GroupActivity" element={<GroupActivity/>}></Route>
         </Routes>
       </Router>

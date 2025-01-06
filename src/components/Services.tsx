@@ -1,9 +1,7 @@
 
 import Section from '../components/Section';
 import Split from '../components/Split';
-import { Link } from 'react-router-dom';
 import Quads from '../components/Quads';
-import Form from '../components/Form';
 
 import img_behaviour from '../assets/behaviour-support.jpg';
 import img_living from '../assets/living-support.jpg';

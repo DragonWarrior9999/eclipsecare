@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import Section from './Section';
 import { ReactNode } from 'react';
 import logo from '../assets/logo-primary.svg';
-import { Link } from 'react-router-dom';
 
 interface propsHeader{
     children: ReactNode;
