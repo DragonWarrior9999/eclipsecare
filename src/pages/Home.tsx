@@ -83,15 +83,15 @@ export default function Home(){
                         left={
                             <ul className="p-[20px] faq-list">
                                 <li>Frequently Asked Questions</li>
-                                <li>How to sign up as a client on EclispeCare</li>
-                                <li>Risks of taking your booking away from EclipseCare</li>
-                                <li>Insurance</li>
+                                <li>How do I refer someone for EclispeCare</li>
+                                <li>Who is Eligible for NDIS</li>
+                                <li>How to set goals</li>
                             </ul>
                         } 
                         right={
                             <ul className="hidden md:block p-[20px] faq-list">
                                 <li>Navigating NDIS</li>
-                                <li>Writing a great job post to find a support worker</li>
+                                <li>Where can I find more Information about NDIS</li>
                                 <li>What to consider when looking for support</li>
                                 <li>Building your support team</li>
                             </ul>

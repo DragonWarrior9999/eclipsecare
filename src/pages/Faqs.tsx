@@ -19,6 +19,9 @@ export default function Faqs(){
                 <div className={`md:grid grid-cols-12 `}>
                     <div className={`article-text col-span-9 min-h-[500px] `}>
 
+
+                    <h3>How to sign up a client on EclipseCare.</h3>
+        
                     <h3>Who is Eligible for NDIS?</h3>
                     <p>Depending on verification through the NDIS portal, you may be eligible for NDIS-funded supports to help live an empowered life. We can assist in contacting your local NDIS office to create and submit an application.</p>
                     <br/>

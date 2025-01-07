@@ -1,30 +1,41 @@
 import Section from "./Section";
-import Split from "./Split";
 import { ReactNode } from 'react';
+import Hero from "./Hero";
 
 
 interface propsArticle{
     
-    text: ReactNode;
-    right_col: ReactNode;
+    text_hero: ReactNode;
+    text_article: ReactNode;
+    img_hero: string;
+    img_article: string;
 }
 
-export default function Article({text, right_col}: propsArticle){
+export default function Article({img_hero, img_article, text_hero, text_article}: propsArticle){
     return (
 
-        <Section className="bg-violet-300">
-            <Split left_span="6" right_span="6" responsive="md" className="bg-red-400"
-            left={
-                <div className={`article-text min-h-[300px] border border-yellow-300`}>
-                    {text}
+        <>
+            <Hero img_src={img_hero}>
+                {text_hero}
+            </Hero>
+            <Section className="pt-[40px] pb-[30px]">
+                <div className={`md:grid grid-cols-12 `}>
+                    <div className={`col-span-9 min-h-[500px] `}>
+                        <div className={`article-text min-h-[300px] border`}>
+                            {text_article}
+                        </div>
+                    </div>
+                    <div className={`col-span-3 border`}
+                    style={{
+                        backgroundImage: `url(${img_article})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center'
+                    }}
+                    >
+                    </div>
                 </div>
-            }
-            right={
-                <div className={`bg-green-300 min-h-[300px]`}>
-                    {right_col}
-                </div>
-            }
-            ></Split>
-        </Section>
+            </Section>
+        </>
     )
 }

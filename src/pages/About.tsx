@@ -5,6 +5,8 @@ import Split from "../components/Split"
 import Footer from "../components/Footer"
 
 import img_pink_jacket from '../assets/pink-jacket.png';
+import img_4_people from '../assets/4_people.jpg';
+import img_behaviour from '../assets/behaviour-support.jpg';
 
 export default function About(){
 
@@ -22,25 +24,25 @@ export default function About(){
             </div>
         </Hero>
 
-        <Section className="pb-[30px] pt-[30px] text-navy">
+        <Section className="pb-[10px] pt-[30px] text-navy">
             <div className={`md:grid grid-cols-12 `}>
-                <div className={`article-text col-span-7 min-h-[500px] `}>
-                        <h2>Family care.</h2>
+                <div className={`article-text col-span-8 min-h-[400px] `}>
+                        <h1>Family care.</h1>
                         <br/>
                         <p>We are a professional family run disability company with expertise in mental health, drug and alcohol counselling and complex physical disabilities.</p>
                         <br/>
                         <p>Our customised care plans allow for a specialised approach to providing the best care for everyone.</p>
-                        <ul className="">
+                        <ul className="space-y-2">
                             <br/>
                             <li>- sdjn asj asdjsndajsnd asjdas asddjknj sjassdnj asjdknasdsa.</li>
                             <li>- sajkdn asjj djskdan jaskd sdjjj js jsd jssjakjs.</li>
                             <li>- asdjn asj asdjsndajsnd asjdas asddjknj sjassdnj asjdknasdsa.</li>
                         </ul>
                 </div>
-                <div className={`col-span-5`}
+                <div className={`col-span-4 border`}
                     style={{
                         backgroundImage: `url(${img_pink_jacket}`,
-                        backgroundSize: 'contain',
+                        backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'
                     }}
                 >
@@ -48,6 +50,39 @@ export default function About(){
                 </div>
             </div>
         </Section>
+        <Section className="pb-[30px] pt-[30px] text-navy">
+            <div className={`md:grid grid-cols-12 `}>
+                <div className={`article-text col-span-8 min-h-[400px] `}>
+                        <h2>We are a specialised NDIS registered Provider.</h2>
+                        <br/>
+                        <p>At Eclipsecare, we redefine disability support, empowering individuals to achieve their full potential. With expert guidance, innovative solutions, and a deep understanding of participants' needs, we provide the resources and encouragement to help them thrive.</p>
+                        <br/>
+                        <p>Together, we approach the challenges of disability support with care, empathy, and dignity.</p>
+                </div>
+                <div className={`col-span-4 border grid grid-row-2`}>
+                    <div className="row-span-1"
+                        style={{
+                            backgroundImage: `url(${img_4_people}`,
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    ></div>
+                    <div className="row-span-1"
+                        style={{
+                            backgroundImage: `url(${img_behaviour}`,
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
+                    </div>
+                        
+                </div>
+            </div>
+        </Section>
+
+
+
+
 
         <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
             <div className="bg-white p-[60px]">

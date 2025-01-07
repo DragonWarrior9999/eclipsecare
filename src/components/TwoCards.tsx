@@ -24,7 +24,7 @@ export default function TwoCards({heading_left, heading_right, img_left, img_rig
                 >
                 </div>*/}
                 <div className=" w-full flex md:max-w-[500px] justify-between rounded-lg min-h-[300px] border border-navy cards">
-                    <div className="flex items-center"><h3>{heading_left}</h3></div>
+                    <div className="flex items-center"><p>Explore Careers</p><h3>{heading_left}</h3></div>
                     <div
                     className="min-w-[200px] border rounded-lg"
                     style={{
