@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Section from './Section';
 import { ReactNode } from 'react';
 import logo from '../assets/logo-primary.svg';
+import { Link } from 'react-router-dom';
 
 interface propsHeader{
     children: ReactNode;
@@ -81,7 +82,9 @@ export default function Header({children}: propsHeader){
                     <div className="hidden lg:flex items-center h-full">
                         {children}
                         <div className="w-[200px]"></div>
+                        <Link to="/ReferralForm">
                         <button className="ml-[20px] button-dark button-sm">Get Started</button>
+                        </Link>
                     </div>
                 </div>
             </Section>

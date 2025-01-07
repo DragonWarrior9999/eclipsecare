@@ -123,7 +123,7 @@ span{
 }
 .form-input{
     background-color: var(--offwhite);
-    border: solid var(--primarydark);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Very light shadow */
     border-radius: 4px;
     padding-left: 12px;
     min-height: 50px;

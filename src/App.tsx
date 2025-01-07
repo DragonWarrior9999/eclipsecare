@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services/Services';
+import ReferralForm from './pages/ReferralForm';
 import BehaviourSupport from './pages/Services/BehaviourSupport';
 import LivingSupport from './pages/Services/LivingSupport';
 import SpendingSupport from './pages/Services/SpendingSupport';
@@ -66,12 +67,7 @@ function App() {
               } 
               right_children={
                 <>
-                  <ul className="sub-menu-ul">NDIS
-                      <Link to="NDIS/SupportServices"><li>Support Services</li></Link>
-                      <Link to="NDIS/Faqs"><li>FAQs</li></Link>
-                      <Link to="NDIS/Pricing"><li>Pricing</li></Link>
-                  </ul>
-                    <ul className="sub-menu-ul">Activites
+                  <ul className="sub-menu-ul">Activites
                         <Link to="/Services/GroupActivity"><li>Group Activities</li></Link>
                         <Link to="/Services/CourtSupport"><li>Court Assistance</li></Link>
                   </ul>
@@ -90,19 +86,27 @@ function App() {
                       <Link to="/Community/Careers"><li>Careers</li></Link>
                       <Link to=""><li>Mentor Stories</li></Link>
                   </ul>
+                  {/*
                   <ul className="sub-menu-ul">News and Events
                       <Link to="/Latest/Blogs"><li>Blogs</li></Link>
                       <Link to="/Latest/Events"><li>Events</li></Link>
                       <Link to=""><li>Annual Review</li></Link>
+                  </ul>*/}
+                  <ul className="sub-menu-ul">NDIS
+                      <Link to="NDIS/SupportServices"><li>Support Services</li></Link>
+                      <Link to="NDIS/Faqs"><li>FAQs</li></Link>
+                      <Link to="NDIS/Pricing"><li>Pricing</li></Link>
                   </ul>
                 </>
               }
               right_children={
-                <ul className="sub-menu-ul">Resources
-                    <Link to=""><li>Community resources</li></Link>
-                    <Link to=""><li>Resources for Parents</li></Link>
-                    <Link to=""><li>Insurance</li></Link>
+                <>
+                <ul className="sub-menu-ul">News and Events
+                    <Link to="/Latest/Blogs"><li>Blogs</li></Link>
+                    <Link to="/Latest/Events"><li>Events</li></Link>
+                    <Link to=""><li>Annual Review</li></Link>
                 </ul>
+                </>
               }
               ></SubMenu>
             </MenuHeading>
@@ -143,6 +147,7 @@ function App() {
           <Route path="/Blogs/NotMeetingNeeds" element={<Blog_NotMeetingNeeds/>}></Route>
           <Route path="/Blogs/PlanReview" element={<Blog_PlanReview/>}></Route>
           <Route path="/Blogs/TipsOnTransitioning" element={<Blog_TipsOnTransitioning/>}></Route>
+          <Route path="/ReferralForm" element={<ReferralForm/>}></Route>
 
         </Routes>
       </Router>

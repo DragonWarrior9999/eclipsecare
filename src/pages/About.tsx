@@ -50,7 +50,7 @@ export default function About(){
                 </div>
             </div>
         </Section>
-        <Section className="pb-[30px] pt-[30px] text-navy">
+        <Section className="pb-[30px] pt-[30px] text-navy mt-[20px]">
             <div className={`md:grid grid-cols-12 `}>
                 <div className={`article-text col-span-8 min-h-[400px] `}>
                         <h2>We are a specialised NDIS registered Provider.</h2>

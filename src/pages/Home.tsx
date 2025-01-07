@@ -4,6 +4,7 @@ import Split from '../components/Split';
 import Quads from '../components/Quads';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
+import UsefulLinks from '../components/UsefulLinks';
 
 
 import img_hero from '../assets/hero-img.png';
@@ -63,6 +64,7 @@ export default function Home(){
                         </div>
                 </div>
             </Section>
+
             <Section className="min-h-[400px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
                     <SplitBanner img_src={img_smiling} image="left" className="bg-white text-navy rounded-lg min-h-[320px] ">
@@ -73,32 +75,8 @@ export default function Home(){
                     </SplitBanner>
                 </div>
             </Section>
-            <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
-                <div className="bg-white p-[60px]">
-                    <div>
-                        <h2>Some helpful links to get you started</h2>
-                        <p>Check out our blogs too...</p>
-                    </div>
-                    <Split responsive="md" className="min-h-[200px]" left_span='6' right_span='6'
-                        left={
-                            <ul className="p-[20px] faq-list">
-                                <li>Frequently Asked Questions</li>
-                                <li>How do I refer someone for EclispeCare</li>
-                                <li>Who is Eligible for NDIS</li>
-                                <li>How to set goals</li>
-                            </ul>
-                        } 
-                        right={
-                            <ul className="hidden md:block p-[20px] faq-list">
-                                <li>Navigating NDIS</li>
-                                <li>Where can I find more Information about NDIS</li>
-                                <li>What to consider when looking for support</li>
-                                <li>Building your support team</li>
-                            </ul>
-                        }
-                    />
-                </div>
-            </Section>
+            <UsefulLinks></UsefulLinks>
+
             <Section className="min-h-[620px] bg-white">
                 <div className="pt-[40px]">
                     <Quads
@@ -113,7 +91,6 @@ export default function Home(){
                             <div className="h-full">
                                 <div className="mt-[10px] border border-orange rounded-lg h-[250px]"
                                     style={{
-
                                         backgroundImage: `url(${img_laptop})`,
                                         backgroundSize: 'cover',
                                         backgroundRepeat: 'no-repeat',

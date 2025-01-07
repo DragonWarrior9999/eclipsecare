@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
 import Section from '../components/Section';
+import UsefulLinks from '../components/UsefulLinks';
 
 import img_hero from '../assets/get-involved.jpg';
 import img_support from '../assets/SupportServices.jpg';
@@ -63,6 +64,7 @@ export default function GetInvolved(){
                     </div>
                 </div>
             </Section>
+            <UsefulLinks></UsefulLinks>
         </>
     )
 }
