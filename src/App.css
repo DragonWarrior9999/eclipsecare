@@ -96,9 +96,10 @@ span{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Very light shadow */
-
 }
-
+.cards-twoCards{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Very light shadow */
+}
 .faq-list > li{
     min-height: 60px;
     display: flex;
@@ -127,6 +128,7 @@ span{
     border-radius: 4px;
     padding-left: 12px;
     min-height: 50px;
+    font-family: 'Rubik', sans-serif;
 }
 .form-input::placeholder{
     font-size: 1.6rem;

@@ -5,10 +5,10 @@ import Services from "../../components/Services";
 import Footer from '../../components/Footer';
 
 
-import img_behaviour from '../../assets/behaviour-support.jpg';
 import img_living from '../../assets/living-support.jpg';
 import img_spending from '../../assets/spending-support.jpg';
-
+import img_about from '../../assets/pink-jacket.png';
+import img_involved from '../../assets/get-involved.jpg';
 
 export default function SpendingSupport(){
 
@@ -46,14 +46,24 @@ export default function SpendingSupport(){
                 </div>
             </Section>
             <Services></Services>
-            <Section className="min-h-[400px] bg-babyblue">
-                <TwoCards 
-                img_left={img_behaviour}
-                heading_left="Some other"
-                img_right={img_living}
-                heading_right="Links"
-                ></TwoCards>
-            </Section>
+            <TwoCards 
+            img_left={img_about}
+            text_left={
+                <>
+                <h4>About Us</h4>
+                <p>Find out why where the best</p>
+                </>
+            }
+            src_left="/About"
+            src_right="/Community/GetInvolved"
+            img_right={img_involved}
+            text_right={
+                <>
+                <h4>Get Involved</h4>
+                <p>Join our weekly Activities</p>
+                </>
+            }
+            ></TwoCards>
             <Footer></Footer>
         </>
 
