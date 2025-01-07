@@ -134,19 +134,9 @@ export default function Home(){
                     <div className="flex justify-center lg:block col-span-6">
                         <Form></Form>
                     </div>
-                    <div className="col-span-6 border p-[10px] hidden">
-                        <h1 className="max-w-[390px] text-navy">jwenwkn wj aswe asdks asas sa</h1>
-                        <SplitBanner img_src="src/assets/theBoys.jpg" image="left" className="mt-[15px] border text-navy rounded-lg min-h-[200px]">
-                            <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
-                            {/*MAKE THIS A BIGG AHH BUTTON */}
-                        </SplitBanner>
-                        <SplitBanner img_src="src/assets/wheelchair_hand.jpg" image="left" className="mt-[10px] border text-navy rounded-lg min-h-[200px]">
-                            <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
-                            {/*MAKE THIS A BIGG AHH BUTTON */}
-                        </SplitBanner>
+                    <div className="col-span-6 border p-[10px]">
                     </div>
                 </div>
-                
             </Section>
             <Footer></Footer>
         </>

@@ -3,6 +3,7 @@ import HeroV2 from "../../components/HeroV2";
 import TwoCards from "../../components/TwoCards";
 import Services from "../../components/Services";
 import Footer from '../../components/Footer';
+import Form from '../../components/Form';
 
 
 
@@ -64,6 +65,15 @@ export default function BehaviourSupport(){
                 </>
             }
             ></TwoCards>
+            <Section className="bg-white min-h-[600px] pt-[100px]">
+                <div className="min-h-[400px] lg:grid grid-cols-12">
+                    <div className="flex justify-center lg:block col-span-6">
+                        <Form></Form>
+                    </div>
+                    <div className="col-span-6 border p-[10px]">
+                    </div>
+                </div>
+            </Section>
             <Footer></Footer>
         </>
 

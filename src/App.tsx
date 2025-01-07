@@ -48,7 +48,7 @@ function App() {
 
         <Header>
           <Menu>
-            <Link to="/"><MenuHeading label="Home" children=""></MenuHeading></Link>
+            <Link to="/"><div className="pl-8 pr-8 h-full flex items-center">Home</div></Link>
             <MenuHeading label="Find Support">
               <SubMenu img_src={img_sub_menu_2}
               left_children={
