@@ -1,18 +1,14 @@
 import Article from "../../components/Article"
 
+import img_hero from '../../assets/debunking_myths.jpg';
 
 export default function Blog_MythsDebunked(){
 
     return(
 
-        <Article img_hero="" img_article=""
-        text_hero={
-            <div className="text">
-                <h1>Common NDIS Myths debunked!</h1>
-            </div>
-        }
+        <Article img_article="" img_hero={img_hero}
         text_article={
-            <h2>903240239</h2>
+            <h1>Common NDIS Myths debunked.</h1>
         }></Article>
     
     )

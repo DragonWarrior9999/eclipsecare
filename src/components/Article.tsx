@@ -1,25 +1,31 @@
 import Section from "./Section";
 import { ReactNode } from 'react';
-import Hero from "./Hero";
 
 
 interface propsArticle{
     
-    text_hero: ReactNode;
+    //text_hero: ReactNode;
     text_article: ReactNode;
     img_hero: string;
     img_article: string;
 }
 
-export default function Article({img_hero, img_article, text_hero, text_article}: propsArticle){
-    return (
+export default function Article({img_article, img_hero, text_article}: propsArticle){
 
+    return (
         <>
-            <Hero img_src={img_hero}>
-                {text_hero}
-            </Hero>
-            <Section className="pt-[40px] pb-[30px]">
-                <div className={`md:grid grid-cols-12 `}>
+            <div className="h-[150px]"></div>
+            <div className="min-h-[300px] w-full"
+                
+                style={{
+                    backgroundImage: `url(${img_hero})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center'
+                }}
+            ></div>
+            <Section className="pt-[40px] pb-[30px] bg-[#F5F9FF]">
+                <div className={`md:grid grid-cols-12 bg-white rounded-lg`}>
                     <div className={`col-span-9 min-h-[500px] `}>
                         <div className={`article-text min-h-[300px] border`}>
                             {text_article}

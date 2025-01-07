@@ -2,13 +2,14 @@ import Section from '../components/Section';
 import Hero from '../components/Hero';
 
 import img_living from '../assets/4_people.jpg';
+import img_hero from '../assets/question_marks.svg';
 
 export default function Faqs(){
 
 
     return(
         <>
-            <Hero img_src=''>
+            <Hero img_src={img_hero}>
                 <div className="text">
                     <p>Learn about NDIS.</p>
                     <h1>Frequently Asked Questions about NDIS.</h1>

@@ -1,18 +1,14 @@
 import Article from "../../components/Article"
 
+import img_hero from '../../assets/gaming-drug.jpg';
 
 export default function Blog_AccessSpecialist(){
 
     return(
 
-        <Article img_hero="" img_article=""
-        text_hero={
-            <div className="text">
-                <h1>How to Access Specialist Disability Accomodation?</h1>
-            </div>
-        }
+        <Article img_article="" img_hero={img_hero}
         text_article={
-            <h2>903240239</h2>
+            <h2>How to access specialist disability.</h2>
         }></Article>
     
     )
