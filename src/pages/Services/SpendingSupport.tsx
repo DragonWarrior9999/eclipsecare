@@ -22,10 +22,10 @@ export default function SpendingSupport(){
                     <p>Managing Money, Empowering Independence.</p>
                 </div>
             </HeroV2>
-            <Section className="pt-[30px] pb-[30px]">
+            <Section className="md:pt-[30px] md:pb-[30px]">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`col-span-9 min-h-[500px]`}>
-                        <div className={`article-text min-h-[300px]`}>
+                    <div className={`col-span-9 min-h-[500px] border`}>
+                        <div className={`p-[20px] sm:p-[60px] min-h-[300px]`}>
                             <h2>Spending Support</h2>
                             <br/>
                             <p>Our Behavior Support services are designed to empower individuals with disabilities to lead more fulfilling and independent lives by addressing challenging behaviors in a supportive and person-centered way. We work collaboratively with participants, their families, and support teams to develop individualized behavior support plans that focus on understanding the underlying causes of behaviors and implementing strategies to foster positive change. Our team of qualified specialists is dedicated to creating safe and respectful environments where participants can thrive.</p>

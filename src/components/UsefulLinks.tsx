@@ -7,7 +7,7 @@ export default function UsefulLinks(){
 
     return(
         <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
-            <div className="bg-white p-[60px]">
+            <div className="bg-white p-[30px] sm:p-[60px]">
                 <div>
                     <h2>Some helpful links to get you started</h2>
                     <p>Check out our blogs too...</p>

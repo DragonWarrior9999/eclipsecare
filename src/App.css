@@ -84,8 +84,7 @@ span{
     padding: 20px;
 }
 .article-text{
-    padding: 30px 70px;
-    padding: 60px 80px;
+    padding: 60px;
 }
 .cards{
     border: solid var(--navy);

@@ -81,7 +81,6 @@ export default function Header({children}: propsHeader){
                     {/*<img src={logo} className=" bg-green-500 object-contain w-[200px] border border-white" style={{width: "300"}}></img>*/}
                     <div className="hidden lg:flex items-center h-full">
                         {children}
-                        <div className="w-[200px]"></div>
                         <Link to="/ReferralForm">
                         <button className="ml-[20px] button-dark button-sm">Get Started</button>
                         </Link>

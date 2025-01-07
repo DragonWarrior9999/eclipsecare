@@ -23,9 +23,9 @@ export default function GamingDrug(){
                     <p>Helping you regain control and thrive in both worlds.</p>
                 </div>
             </HeroV2>
-            <Section className="pb-[30px] pt-[30px] text-navy">
+            <Section className="md:pb-[30px] md:pt-[30px] text-navy">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`article-text col-span-9 min-h-[500px] `}>
+                    <div className={`p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
                         <h2>How does gaming and drug counselling work?</h2>
                         <br/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat eget eros maximus cursus. Nunc vel turpis eget dui efficitur tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at efficitur elit.</p>
