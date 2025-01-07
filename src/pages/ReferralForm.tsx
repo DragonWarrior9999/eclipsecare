@@ -8,7 +8,7 @@ export default function ReferralForm(){
         <>
             <div className="h-[150px]"></div>
             <Section className="min-h[400px] bg-babyblue">
-                <div className="min-h-[300px] p-[30px] border border-orange-400">
+                <div className="min-h-[300px] sm:p-[30px] border border-orange-400">
                     <div className="lg:grid grid-cols-2 w-full min-h-[800px] border border-violet-400">
                         <div className="border border-yellow-300 p-[10px] md:p-[60px] lg:p-[30px]">
                             <h4>Participant Details</h4>
@@ -39,9 +39,9 @@ export default function ReferralForm(){
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-green-400 lg:p-[30px]">
+                        <div className="bg-green-400 p-[10px] md:p-[60px] lg:p-[30px]">
                             <h4>Referrer Details</h4>
-                            <div className="mt-[20px] xs:grid grid-cols-2 grid-rows-4 gap-3 border border-yellow min-h-[300px]">
+                            <div className="mt-[20px] xs:grid grid-cols-2 grid-rows-4 gap-8 border border-yellow min-h-[300px]">
                                 <div className="form-div">
                                     <input type="text" placeholder="First Name" className="form-input w-full h-full"/>
                                 </div>
