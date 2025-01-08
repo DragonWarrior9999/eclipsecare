@@ -9,16 +9,15 @@ export default function UsefulLinks(){
         <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
             <div className="bg-white p-[30px] sm:p-[60px]">
                 <div>
-                    <h2>Some helpful links to get you started</h2>
-                    <p>Check out our blogs too...</p>
+                    <h2 className=" text-center sm:text-left text-h2-sm sm:text-h2-base">Some helpful links to get you started</h2>
                 </div>
                 <Split responsive="md" className="min-h-[200px]" left_span='6' right_span='6'
                     left={
                         <ul className="p-[20px] faq-list">
-                            <li>Frequently Asked Questions</li>
-                            <li>How do I refer someone for EclispeCare</li>
-                            <li>Who is Eligible for NDIS</li>
-                            <li>How to set goals</li>
+                            <li className="text-center sm:text-left">Frequently Asked Questions</li>
+                            <li className="text-center sm:text-left">How do I refer someone for EclispeCare</li>
+                            <li className="text-center sm:text-left">Who is Eligible for NDIS</li>
+                            <li className="text-center sm:text-left">How to set goals</li>
                         </ul>
                     } 
                     right={

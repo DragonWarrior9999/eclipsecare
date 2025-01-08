@@ -150,7 +150,7 @@ function App() {
           <Route path="/Blogs/PlanReview" element={<Blog_PlanReview/>}></Route>
           <Route path="/Blogs/TipsOnTransitioning" element={<Blog_TipsOnTransitioning/>}></Route>
           <Route path="/ReferralForm" element={<ReferralForm/>}></Route>
-          <Route path="/eclipsecare/Random" element={<Random/>}></Route>
+          <Route path="/Random" element={<Random/>}></Route>
 
         </Routes>
       </Router>

@@ -14,13 +14,14 @@ export default {
         primarydark: 'var(--primarydark)'
       },
       screens:{
-        'xs': '500px'
+        'xs': '500px',
+        'xxs': '460px'
       },
       fontSize: {
         'h1-base': '4.5rem',
-        'h1-sm': '3.2rem',
+        'h1-sm': '3.6rem',
         'h2-base': '3.2rem',
-        'h2-sm': '2.8rem',
+        'h2-sm': '2.6rem',
         'h3-base': '2.4rem',
         'h3-sm': '2rem'
       }

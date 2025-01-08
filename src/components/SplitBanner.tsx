@@ -29,7 +29,7 @@ export default function SplitBanner({children, className, image, img_src}: props
                     style={{ backgroundImage: `url(${img_src})` }}
                 ></div>
                 {/*<div className={`col-span-6 bg-[url('${img_src}')] bg-no-repeat`}></div>*/}
-                <div className="col-span-6 bg-white z-20">
+                <div className="col-span-6 bg-white z-10">
                     <div className="text">
                         {children}
                     </div>
