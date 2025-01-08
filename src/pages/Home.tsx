@@ -22,7 +22,7 @@ export default function Home(){
                     <div className="w-full mt-[70px] lg:col-span-7 text-navy">
                         <div className="p-[20px]">
                             <p>Welcome to EclipseCare</p>
-                            <h1>Your Life Our Mission.</h1>
+                            <h1 className="sm:text-h1-base text-h1-sm">Your Life Our Mission.</h1>
                             <p className="max-w-[530px] mt-[15px]">We're committed to our family and providing the best outcomes possible for participants and their goals in society.</p>
                         </div>
                         <div className="p-[20px]">
@@ -46,20 +46,20 @@ export default function Home(){
             
             <Section className="pt-[60px] pb-[20px] bg-white text-navy min-h-[500px] border">
                 <div className="text">
-                    <h2>Lorem ipsum odor amet.</h2>
+                    <h2 className="text-h2-sm sm:text-h2-base">Lorem ipsum odor amet.</h2>
                     <p className="max-w-[740px] mt-[15px]">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis, scelerisque interdum sapien molestie facilisis pharetra.</p>
                 </div> 
                 <div className="mt-[10px] text flex-col flex md:flex-row justify-center gap-10">
                         <div className="w-full md:max-w-[320px] rounded-lg min-h-[200px] cards">
-                            <h3>1. Connect</h3>
+                            <h3 className="text-h3-sm sm:text-h3-base">1. Connect</h3>
                             <p className="mt-[20px] ">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. viverra porta fusce</p>
                         </div>
                         <div className="w-full md:max-w-[300px] rounded-lg min-h-[200px] cards">
-                            <h3>2. Book</h3>
+                            <h3 className="text-h3-sm sm:text-h3-base">2. Book</h3>
                             <p className="mt-[20px] ">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis nullam eu viverra porta fusce. nullam eu viverra</p>
                         </div>
                         <div className=" w-full md:max-w-[300px] rounded-lg min-h-[200px] cards">
-                            <h3>3. Manage</h3>
+                            <h3 className="text-h3-sm sm:text-h3-base">3. Manage</h3>
                             <p className="mt-[20px] ">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla nullam eu viverra porta fusce. nullam eu viverra porta </p>
                         </div>
                 </div>
@@ -68,7 +68,7 @@ export default function Home(){
             <Section className="min-h-[400px] mt-[30px] bg-primarydark">
                 <div className="p-[40px]">
                     <SplitBanner img_src={img_smiling} image="left" className="bg-white text-navy rounded-lg min-h-[320px] ">
-                        <h1 className="mt-[30px]">Iaculis ar maecenas</h1>
+                        <h1 className="sm:text-h1-base text-h1-sm mt-[30px]">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px]">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
                         {/*MAKE THIS A BIGG AHH BUTTON */}
                         <button className="mt-[15px] button-sm bg-babyblue text-navy">Get Started</button>
@@ -83,7 +83,7 @@ export default function Home(){
                         className=""
                         top_left={
                             <div className="text">
-                                <h2>Accessing disability support services with NDIS funding</h2>
+                                <h2 className="text-h2-sm sm:text-h2-base">Accessing disability support services with NDIS funding</h2>
                                 <p className="mt-[20px] text-[2rem] font-semibold">Anyone with self-managed or plan-managed NDIS funding can access disability support services on EclipseCare.</p>
                             </div>
                         } 
@@ -101,13 +101,13 @@ export default function Home(){
                         } 
                         bottom_left={
                             <div className="text">
-                                <h3>How to use NDIS disability support funding on EclipseCare.</h3>
+                                <h3 className="text-h3-sm sm:text-h3-base">How to use NDIS disability support funding on EclipseCare.</h3>
                                 <p>If you are self-managed or plan-managed you can use your funds to book a disability support worker directly through your EclipseCare account. When setting up your account, just provide EclipseCare with your funding details and we will handle the rest. Learn more about using your NDIS funding on EclipseCare.</p>
                             </div>
                         } 
                         bottom_right={
                             <div className="text">
-                                <h3>What disability support can be booked on EclipseCare?</h3>
+                                <h3 className="text-h3-sm sm:text-h3-base">What disability support can be booked on EclipseCare?</h3>
                                 <p>Depending on your NDIS funding limits, you can hire disability who can provide services including: gardening, cleaning, cooking, transport, personal care, nursing services, speech therapy, occupational therapy, physiotherapy, and psychology support. Learn more about the services available on EclipseCare.</p>
                             </div>
                         } 
@@ -118,7 +118,7 @@ export default function Home(){
                     <Split responsive="md" className="s4-p min-h-[200px] bg-primarydark rounded-lg" left_span='6' right_span='6' 
                     left={
                         <div className="text-white">
-                            <h2>Whatever you want to achieve, we’ll help you get there.</h2>
+                            <h2 className="text-h2-sm sm:text-h2-base">Whatever you want to achieve, we’ll help you get there.</h2>
                         </div>
                     }
                     right={

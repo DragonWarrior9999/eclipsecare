@@ -38,6 +38,8 @@ import Blog_PlanReview from './pages/Blogs/PrepareYourPlanReview';
 import Blog_TipsOnTransitioning from './pages/Blogs/TipsOnTransitioningFromSchoolToWork';
 import Blog_AccessSpecialist from './pages/Blogs/AccessSpecialistDisability';
 
+import Random from './pages/Random';
+
 function App() {
   //const [count, setCount] = useState(0)
 
@@ -148,6 +150,7 @@ function App() {
           <Route path="/Blogs/PlanReview" element={<Blog_PlanReview/>}></Route>
           <Route path="/Blogs/TipsOnTransitioning" element={<Blog_TipsOnTransitioning/>}></Route>
           <Route path="/ReferralForm" element={<ReferralForm/>}></Route>
+          <Route path="/eclipsecare/Random" element={<Random/>}></Route>
 
         </Routes>
       </Router>
