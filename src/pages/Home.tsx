@@ -26,7 +26,7 @@ export default function Home(){
             <Section className="bg-babyblue min-h-[460px] lg:min-h-[520px] pb-[20px] ">
                 <div className=" grid h-full lg:grid-cols-12">
                     <div className=" w-full mt-[30px] sm:mt-[70px] lg:col-span-7 text-navy">
-                        <div className=" p-[20px]">
+                        <div className="border border-violet-400 p-[20px]">
                             <p className="text-center sm:text-left">Welcome to EclipseCare</p>
                             <h1 className="border sm:text-h1-base text-h1-sm text-center sm:text-left">Your Life Our Mission.</h1>
                             <p className="text-center sm:text-left max-w-[530px] mt-[15px]">We're committed to our family and providing the best outcomes possible for participants and their goals in society.</p>
