@@ -11,19 +11,19 @@ interface propsMobileSubMenu{
 
 export default function MobileSubMenu({className, heading, links} :propsMobileSubMenu){
 
-    const [isOpen, useIsOpen] = useState(false);
+    const [isClosed, useIsClosed] = useState(true);
 
     return (
 
         <div className="border border-orange-400 w-full ">
             <div className="">
                 <div className={`${className} border`}
-                    onClick={()=>{useIsOpen(!isOpen)}}
+                    onClick={()=>{useIsClosed(!isClosed)}}
                 >{heading}
                 </div>
                 <div
-                    className={`overflow-hidden
-                        ${isOpen? 'h-[0px]': 'static'}
+                    className={`overflow-hidden transform transition-all duration-1000 ease-out
+                        ${isClosed? 'max-h-0': 'max-h-1000px'}
                     `}
                 >
                     <ul className="pl-[10px]">

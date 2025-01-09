@@ -8,7 +8,9 @@ const MobileMenuComponents = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setBodyScroll(!bodyScroll);
   };
+
   useEffect(()=>{
 
     if(bodyScroll){
@@ -24,7 +26,7 @@ const MobileMenuComponents = () => {
         <button
           onClick={()=>{
             toggleMenu()
-            setBodyScroll(!bodyScroll)
+            //setBodyScroll(!bodyScroll)
             }
           }
           className="absolute left-[-50px] z-40 h-[30px] scale-[200%] bg-navy text-white p-3 rounded-md focus:outline-none"
@@ -59,19 +61,25 @@ const MobileMenuComponents = () => {
   
   const MobileMenu = () =>{
 
+    
     return (
-      
-        <div className="relative ">
+        
+        <div className="relative "
+
+          onClick={toggleMenu}
+
+        >
+        
           {/* Mobile Menu */}
           <div
-            className={`overflow-scroll z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform duration-300 ${
-              isOpen ? "translate-x-0" : "translate-x-full"
-            }`}
+            className={`overflow-scroll z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform ease-in-out duration-1000 
+              ${isOpen ? "translate-x-0" : "translate-x-[-1000px]"}
+            `}
           >
             
             <div className="mt-[160px] border border-violet-300 w-full">
-              <div className="p-[10px] border">Home</div>
-              <div className="p-[10px] border">About Us</div>
+              <Link to="/"><div className="p-[10px] border">Home</div></Link>
+              <Link to="About"><div className="p-[10px] border">About Us</div></Link>
               <MobileSubMenu className="p-[10px]" heading="Services"
                 links={[
                   'Spending Support',
