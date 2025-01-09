@@ -79,7 +79,7 @@ const MobileMenuComponents = () => {
             
             <div className="mt-[160px] border border-violet-300 w-full">
               <Link to="/"><div className="p-[10px] border">Home</div></Link>
-              <Link to="About"><div className="p-[10px] border">About Us</div></Link>
+              <Link to="/About"><div className="p-[10px] border">About Us</div></Link>
               <MobileSubMenu className="p-[10px]" heading="Services"
                 links={[
                   {heading:'Spending Support',src:"/Services/SpendingSupport"},
@@ -93,6 +93,17 @@ const MobileMenuComponents = () => {
 
                 ]}
               ></MobileSubMenu>
+              <Link to="/Community/GetInvolved"><div className="p-[10px] border">Get Involved</div></Link>
+              <Link to="/Latest/Blogs"><div className="p-[10px] border">Blogs</div></Link>
+              <Link to="/NDIS/Faqs"><div className="p-[10px] border">FAQs</div></Link>
+              <MobileSubMenu className="p-[10px]" heading="More"
+                links={[
+                  {heading:'Careers',src:"/Community/Careers"},
+                  {heading:'Pricing', src:"/NDIS/Pricing"},
+                  {heading:'Events', src:"/Latest/Events"},
+                ]}
+              ></MobileSubMenu>
+
 
               {/*
               <MobileSubMenu className="p-[10px]" heading="Services"
