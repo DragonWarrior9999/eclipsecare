@@ -26,10 +26,10 @@ export default function MobileSubMenu({className, heading, links} :propsMobileSu
                         ${isOpen? 'h-[0px]': 'static'}
                     `}
                 >
-                    <ul>
+                    <ul className="pl-[10px]">
                         
                         {links.map((link, index) => (
-                            <li key={index}>{link}</li>
+                            <li className="p-[10px]"key={index}>{link}</li>
                             ))}
                         
                     </ul>

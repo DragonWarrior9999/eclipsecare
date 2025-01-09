@@ -55,49 +55,27 @@ const MobileMenuComponents = () => {
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            {/*flex flex-col items-center justify-center h-full space-y-6 */}
-            <ul className="mt-[150px] border border-red-400 pl-[40px] font flex-col items-center justify-center space-y-6">
-              <li className="border border-white">
-                {/*
-                <a href="#home" className="text-[20px] hover:text-gray-400">
-                  Home
-                </a>*/}
-                <Link to="/">Home</Link>
-              </li>
-              <li className="border border-white">
-                {/*<a href="#about" className="text-[20px] hover:text-gray-400">
-                  About
-                </a>*/}
-                <Link to="/About">About US</Link>
-              </li>
-              <li>
-                Services
-              </li>
-              <li>
-                <a href="#contact" className="text-[20px] hover:text-gray-400">
-                  Contact
-                </a>
-              </li>
-            </ul>
+            
+            <div className="mt-[160px] border border-violet-300 w-full">
+              <div className="p-[10px] border">Home</div>
+              <div className="p-[10px] border">About Us</div>
+              <MobileSubMenu className="p-[10px]" heading="Services"
+                links={[
+                  'Spending Support',
+                  'Living Support',
+                  'Behaviour Support',
+                  'Skills Development',
+                  'Transport Management',
+                  'Gaming and Drug counselling',
+                  'Group Activities',
+                  'Court Assistance'
 
-            <MobileSubMenu className="" heading="Services"
-              links={[
-                'Spending Support',
-                'Living Support',
-                'Behaviour Support',
-                'Skills Development',
-                'Transport Management',
-                'Gaming and Drug counselling',
-                'Group Activities',
-                'Court Assistance'
-
-              ]}
-            ></MobileSubMenu>
-          
+                ]}
+              ></MobileSubMenu>
+            </div>
 
 
           </div>
-
           {/* Overlay */}
           {/*
             {isOpen && (
