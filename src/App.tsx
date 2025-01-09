@@ -40,16 +40,19 @@ import Blog_AccessSpecialist from './pages/Blogs/AccessSpecialistDisability';
 
 import Random from './pages/Random';
 
+import MobileMenuComponents from './components/MobileMenuComponents';
+
 function App() {
   //const [count, setCount] = useState(0)
 
+  const { MobileMenuIcon, MobileMenu } = MobileMenuComponents();
   return (
     <div className="h-[7000px]">
 
       <Router>
-
+        <MobileMenu></MobileMenu>
         <Header>
-          <Menu>
+          <Menu className="border border-green-500 hidden lg:flex">
             <Link to="/"><div className="pl-8 pr-8 h-full flex items-center">Home</div></Link>
             <MenuHeading label="Find Support">
               <SubMenu img_src={img_sub_menu_2}
@@ -112,6 +115,9 @@ function App() {
               }
               ></SubMenu>
             </MenuHeading>
+          </Menu>
+          <Menu className="border border-violet-300 lg:hidden">
+              <MobileMenuIcon></MobileMenuIcon>
           </Menu>
         </Header>
               
