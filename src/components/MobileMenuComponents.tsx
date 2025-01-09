@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import MobileSubMenu from "./MobileSubMenu";
 
 const MobileMenuComponents = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +56,7 @@ const MobileMenuComponents = () => {
             }`}
           >
             {/*flex flex-col items-center justify-center h-full space-y-6 */}
-            <ul className="mt-[110px] pl-[40px] font flex-col items-center justify-center h-full space-y-6">
+            <ul className="mt-[150px] border border-red-400 pl-[40px] font flex-col items-center justify-center space-y-6">
               <li className="border border-white">
                 {/*
                 <a href="#home" className="text-[20px] hover:text-gray-400">
@@ -78,6 +79,23 @@ const MobileMenuComponents = () => {
                 </a>
               </li>
             </ul>
+
+            <MobileSubMenu className="" heading="Services"
+              links={[
+                'Spending Support',
+                'Living Support',
+                'Behaviour Support',
+                'Skills Development',
+                'Transport Management',
+                'Gaming and Drug counselling',
+                'Group Activities',
+                'Court Assistance'
+
+              ]}
+            ></MobileSubMenu>
+          
+
+
           </div>
 
           {/* Overlay */}
