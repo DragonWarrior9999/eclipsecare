@@ -116,7 +116,7 @@ function App() {
               ></SubMenu>
             </MenuHeading>
           </Menu>
-          <Menu className="border border-violet-300 lg:hidden">
+          <Menu className=" lg:hidden items-center relative">
               <MobileMenuIcon></MobileMenuIcon>
           </Menu>
         </Header>

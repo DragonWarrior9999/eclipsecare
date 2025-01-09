@@ -13,7 +13,7 @@ const MobileMenuComponents = () => {
       return(
         <button
           onClick={toggleMenu}
-          className="z-40 fixed top-[35px] right-[30px] scale-[200%] bg-navy text-white p-3 rounded-md focus:outline-none"
+          className="absolute left-[-50px] z-40 h-[30px] scale-[200%] bg-navy text-white p-3 rounded-md focus:outline-none"
           aria-label="Toggle menu"
         >
           {isOpen ? (
@@ -50,12 +50,12 @@ const MobileMenuComponents = () => {
         <div className="relative">
           {/* Mobile Menu */}
           <div
-            className={`z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[90%] text-white transform transition-transform duration-300 ${
+            className={`z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform duration-300 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
             {/*flex flex-col items-center justify-center h-full space-y-6 */}
-            <ul className="mt-[110px] pl-[40px] font border border-red-300 flex-col items-center justify-center h-full space-y-6">
+            <ul className="mt-[110px] pl-[40px] font flex-col items-center justify-center h-full space-y-6">
               <li className="border border-white">
                 {/*
                 <a href="#home" className="text-[20px] hover:text-gray-400">
