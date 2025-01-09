@@ -1,11 +1,16 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 //import { ReactNode } from "react";
 
+interface propsLink{
+    heading: string;
+    src: string;
+}
 
 interface propsMobileSubMenu{
     className: string;
     heading: string | undefined;
-    links: string[];
+    links: propsLink[];
     
 }
 
@@ -18,7 +23,9 @@ export default function MobileSubMenu({className, heading, links} :propsMobileSu
         <div className="border border-orange-400 w-full ">
             <div className="">
                 <div className={`${className} border`}
-                    onClick={()=>{useIsClosed(!isClosed)}}
+                    onClick={(e)=>{useIsClosed(!isClosed)
+                        e.stopPropagation();
+                    }}
                 >{heading}
                 </div>
                 <div
@@ -29,8 +36,11 @@ export default function MobileSubMenu({className, heading, links} :propsMobileSu
                     <ul className="pl-[10px]">
                         
                         {links.map((link, index) => (
-                            <li className="p-[10px]"key={index}>{link}</li>
-                            ))}
+                            <Link to={link.src} key={index}>
+                                <li className="p-[10px]">{link.heading}</li>
+                            </Link>
+                            ))
+                        }
                         
                     </ul>
                 </div>

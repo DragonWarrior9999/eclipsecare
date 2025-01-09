@@ -64,7 +64,7 @@ const MobileMenuComponents = () => {
     
     return (
         
-        <div className="relative "
+        <div className="relative block "
 
           onClick={toggleMenu}
 
@@ -72,8 +72,8 @@ const MobileMenuComponents = () => {
         
           {/* Mobile Menu */}
           <div
-            className={`overflow-scroll z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform ease-in-out duration-1000 
-              ${isOpen ? "translate-x-0" : "translate-x-[-1000px]"}
+            className={`lg:hidden overflow-scroll z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform ease-in-out duration-1000 
+              ${isOpen ? "translate-x-0" : "translate-x-full"}
             `}
           >
             
@@ -82,17 +82,19 @@ const MobileMenuComponents = () => {
               <Link to="About"><div className="p-[10px] border">About Us</div></Link>
               <MobileSubMenu className="p-[10px]" heading="Services"
                 links={[
-                  'Spending Support',
-                  'Living Support',
-                  'Behaviour Support',
-                  'Skills Development',
-                  'Transport Management',
-                  'Gaming and Drug counselling',
-                  'Group Activities',
-                  'Court Assistance'
+                  {heading:'Spending Support',src:"/Services/SpendingSupport"},
+                  {heading:'Living Support', src:"/Services/LivingSupport"},
+                  {heading:'Behaviour Support', src:"/Services/BehaviourSupport"},
+                  {heading:'Skills Development', src:"/Services/SkillsDev"},
+                  {heading:'Transport Management', src:"/Services/TransportManagement"},
+                  {heading:'Gaming and Drug counselling', src:"/Services/GamingCounselling"},
+                  {heading:'Group Activities', src:"/Services/GroupActivity"},
+                  {heading:'Court Assistance', src:"/Services/CourtSupport"}
 
                 ]}
               ></MobileSubMenu>
+
+              {/*
               <MobileSubMenu className="p-[10px]" heading="Services"
                 links={[
                   'Spending Support',
@@ -119,6 +121,7 @@ const MobileMenuComponents = () => {
 
                 ]}
               ></MobileSubMenu>
+              */}
             </div>
 
 
