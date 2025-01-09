@@ -1,19 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import MobileSubMenu from "./MobileSubMenu";
 
 const MobileMenuComponents = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [bodyScroll, setBodyScroll] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(()=>{
+
+    if(bodyScroll){
+      document.body.classList.add('overflow-hidden');
+    }else{
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [bodyScroll])
 
   const MobileMenuIcon = ()=>{
 
       return(
         <button
-          onClick={toggleMenu}
+          onClick={()=>{
+            toggleMenu()
+            setBodyScroll(!bodyScroll)
+            }
+          }
           className="absolute left-[-50px] z-40 h-[30px] scale-[200%] bg-navy text-white p-3 rounded-md focus:outline-none"
           aria-label="Toggle menu"
         >
@@ -48,10 +61,10 @@ const MobileMenuComponents = () => {
 
     return (
       
-        <div className="relative">
+        <div className="relative ">
           {/* Mobile Menu */}
           <div
-            className={`z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform duration-300 ${
+            className={`overflow-scroll z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform duration-300 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
@@ -59,6 +72,32 @@ const MobileMenuComponents = () => {
             <div className="mt-[160px] border border-violet-300 w-full">
               <div className="p-[10px] border">Home</div>
               <div className="p-[10px] border">About Us</div>
+              <MobileSubMenu className="p-[10px]" heading="Services"
+                links={[
+                  'Spending Support',
+                  'Living Support',
+                  'Behaviour Support',
+                  'Skills Development',
+                  'Transport Management',
+                  'Gaming and Drug counselling',
+                  'Group Activities',
+                  'Court Assistance'
+
+                ]}
+              ></MobileSubMenu>
+              <MobileSubMenu className="p-[10px]" heading="Services"
+                links={[
+                  'Spending Support',
+                  'Living Support',
+                  'Behaviour Support',
+                  'Skills Development',
+                  'Transport Management',
+                  'Gaming and Drug counselling',
+                  'Group Activities',
+                  'Court Assistance'
+
+                ]}
+              ></MobileSubMenu>
               <MobileSubMenu className="p-[10px]" heading="Services"
                 links={[
                   'Spending Support',
