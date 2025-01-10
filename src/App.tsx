@@ -48,12 +48,12 @@ function App() {
 
   const { MobileMenuIcon, MobileMenu } = MobileMenuComponents();
   return (
-    <div className="h-[7000px]">
+    <div className="">
 
       <Router>
         <MobileMenu></MobileMenu>
         <Header>
-          <Menu className="border border-green-500 hidden lg:flex">
+          <Menu className="hidden lg:flex">
             <Link to="/"><div className="pl-8 pr-8 h-full flex items-center">Home</div></Link>
             <MenuHeading label="Find Support">
               <SubMenu img_src={img_sub_menu_2}

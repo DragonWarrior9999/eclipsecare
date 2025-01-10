@@ -23,16 +23,16 @@ export default function Home(){
                     backgroundSize: 'cover'
                 }}
             ></div>
-            <Section className="bg-babyblue min-h-[460px] lg:min-h-[520px] pb-[20px] ">
+            <Section className=" min-h-[460px] lg:min-h-[520px] pb-[20px] bg-white sm:bg-babyblue">
                 <div className=" grid h-full lg:grid-cols-12">
                     <div className=" w-full mt-[30px] sm:mt-[70px] lg:col-span-7 text-navy">
-                        <div className="border border-violet-400 p-[20px]">
+                        <div className="p-[20px]">
                             <p className="text-center sm:text-left">Welcome to EclipseCare</p>
-                            <h1 className="border sm:text-h1-base text-h1-sm text-center sm:text-left">Your Life Our Mission.</h1>
+                            <h1 className="sm:text-h1-base text-h1-sm text-center sm:text-left">Your Life Our Mission.</h1>
                             <p className="text-center sm:text-left max-w-[530px] mt-[15px]">We're committed to our family and providing the best outcomes possible for participants and their goals in society.</p>
                         </div>
                         <div className="text-center sm:text-left p-[20px]">
-                            <button className="button-light button-sm">Learn More</button>
+                            <button className=" sm:button-light button-dark button-sm">Learn More</button>
                             <span className="ml-[10px] hidden sm:inline">Get Started</span>
                         </div>
                         <div className="sm:hidden p-[20px] text-center sm:text-left"><span>Get Started</span></div>
@@ -51,7 +51,7 @@ export default function Home(){
                 </div>
             </Section>
             
-            <Section className="pt-[60px] pb-[20px] bg-white text-navy min-h-[500px] border">
+            <Section className="pt-[60px] pb-[20px] bg-babyblue sm:bg-white text-navy min-h-[500px]">
                 <div className="text">
                     <h2 className="text-h2-sm sm:text-h2-base text-center sm:text-left">Lorem ipsum odor amet.</h2>
                     <p className="max-w-[740px] mt-[15px] text-center sm:text-left">Tempus nisl vivamus efficitur etiam libero. Ac odio class nullam eu viverra porta fusce diam! Velit fringilla quis, scelerisque interdum sapien molestie facilisis pharetra.</p>
@@ -72,10 +72,10 @@ export default function Home(){
                 </div>
             </Section>
 
-            <Section className="min-h-[400px] mt-[30px] bg-primarydark">
+            <Section className="min-h-[400px] mt-[30px] pt-[10px] pb-[10px] bg-primarydark">
                 <div className=" sm:p-[40px]">
                     <SplitBanner img_src={img_smiling} image="left" className="bg-white text-navy rounded-lg min-h-[320px] ">
-                        <h1 className="border sm:text-h1-base text-h1-sm mt-[30px] text-center sm:text-left">Iaculis ar maecenas</h1>
+                        <h1 className="sm:text-h1-base text-h1-sm mt-[30px] text-center sm:text-left">Iaculis ar maecenas</h1>
                         <p className="max-w-[460px] text-center sm:text-left">Potenti vel curae erat, egestas odio aenean. Iaculis arcu maecenas blandit adipiscing ultricies ac; ultrices leo Iaculis arcu maecenas blandit</p>
                         {/*MAKE THIS A BIGG AHH BUTTON */}
                         <div className=" text-center sm:text-left">
@@ -87,8 +87,8 @@ export default function Home(){
             </Section>
             <UsefulLinks></UsefulLinks>
 
-            <Section className="min-h-[620px] bg-white hidden sm:block">
-                <div className=" pt-[40px]">
+            <Section className="min-h-[620px] bg-white hidden sm:grid">
+                <div className="pt-[40px] ">
                     <Quads
                         className=""
                         top_left={
@@ -99,7 +99,7 @@ export default function Home(){
                         } 
                         top_right={
                             <div className=" h-full">
-                                <div className=" mt-[10px] border border-orange rounded-lg h-[250px]"
+                                <div className=" mt-[10px] rounded-lg h-[250px]"
                                     style={{
                                         backgroundImage: `url(${img_laptop})`,
                                         backgroundSize: 'cover',
@@ -139,12 +139,12 @@ export default function Home(){
                     }
                 ></Split>
             </Section>
-            <Section className="bg-white min-h-[600px] pt-[100px]">
+            <Section className="bg-white min-h-[600px] md:pt-[60px] pb-[20px] ">
                 <div className=" min-h-[400px] lg:grid grid-cols-12">
                     <div className=" flex justify-center lg:block col-span-6">
                         <Form></Form>
                     </div>
-                    <div className=" col-span-6 border p-[10px]">
+                    <div className=" col-span-6 p-[10px]">
                     </div>
                 </div>
             </Section>

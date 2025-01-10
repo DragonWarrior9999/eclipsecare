@@ -6,7 +6,7 @@ export default function UsefulLinks(){
 
 
     return(
-        <Section className="min-h-[540px] pt-[20px] bg-babyblue text-navy">
+        <Section className="min-h-[540px] pt-[10px] pb-[10px] bg-babyblue text-navy">
             <div className="bg-white p-[30px] sm:p-[60px]">
                 <div>
                     <h2 className=" text-center sm:text-left text-h2-sm sm:text-h2-base">Some helpful links to get you started</h2>

@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 //import { ReactNode } from "react";
 
+import img_arrow_down from '../assets/white-arrow-down.svg';
+import img_arrow_up from '../assets/white-arrow-up.svg';
+
 interface propsLink{
     heading: string;
     src: string;
@@ -20,13 +23,14 @@ export default function MobileSubMenu({className, heading, links} :propsMobileSu
 
     return (
 
-        <div className="border border-orange-400 w-full ">
+        <div className=" w-full ">
             <div className="">
-                <div className={`${className} border`}
+                <div className={`flex ${className}`}
                     onClick={(e)=>{useIsClosed(!isClosed)
                         e.stopPropagation();
                     }}
-                >{heading}
+                ><div>{heading}</div>
+                    <img src={isClosed? img_arrow_down : img_arrow_up} width="25" className="ml-[5px]"></img>
                 </div>
                 <div
                     className={`overflow-hidden transform transition-all duration-1000 ease-out

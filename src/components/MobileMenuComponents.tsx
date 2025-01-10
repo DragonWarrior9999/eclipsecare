@@ -72,14 +72,14 @@ const MobileMenuComponents = () => {
         
           {/* Mobile Menu */}
           <div
-            className={`lg:hidden overflow-scroll z-30 fixed top-0 right-0 h-full w-3/4 bg-navy opacity-[98%] text-white transform transition-transform ease-in-out duration-1000 
+            className={`lg:hidden overflow-scroll z-30 fixed top-0 right-0 h-full w-[90vw] bg-navy opacity-[98%] text-white transform transition-transform ease-in-out duration-1000 
               ${isOpen ? "translate-x-0" : "translate-x-full"}
             `}
           >
             
-            <div className="mt-[160px] border border-violet-300 w-full">
-              <Link to="/"><div className="p-[10px] border">Home</div></Link>
-              <Link to="/About"><div className="p-[10px] border">About Us</div></Link>
+            <div className="mt-[160px] w-full pl-[10px]">
+              <Link to="/"><div className="p-[10px]">Home</div></Link>
+              <Link to="/About"><div className="p-[10px]">About Us</div></Link>
               <MobileSubMenu className="p-[10px]" heading="Services"
                 links={[
                   {heading:'Spending Support',src:"/Services/SpendingSupport"},
@@ -93,9 +93,9 @@ const MobileMenuComponents = () => {
 
                 ]}
               ></MobileSubMenu>
-              <Link to="/Community/GetInvolved"><div className="p-[10px] border">Get Involved</div></Link>
-              <Link to="/Latest/Blogs"><div className="p-[10px] border">Blogs</div></Link>
-              <Link to="/NDIS/Faqs"><div className="p-[10px] border">FAQs</div></Link>
+              <Link to="/Community/GetInvolved"><div className="p-[10px]">Get Involved</div></Link>
+              <Link to="/Latest/Blogs"><div className="p-[10px]">Blogs</div></Link>
+              <Link to="/NDIS/Faqs"><div className="p-[10px]">FAQs</div></Link>
               <MobileSubMenu className="p-[10px]" heading="More"
                 links={[
                   {heading:'Careers',src:"/Community/Careers"},
