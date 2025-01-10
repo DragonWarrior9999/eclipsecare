@@ -19,7 +19,7 @@ export default {
       },
       fontSize: {
         'h1-base': '4.5rem',
-        'h1-sm': '3.6rem',
+        'h1-sm': '3rem',
         'h2-base': '3.2rem',
         'h2-sm': '2.6rem',
         'h3-base': '2.4rem',

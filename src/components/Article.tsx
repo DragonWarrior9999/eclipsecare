@@ -24,14 +24,14 @@ export default function Article({img_article, img_hero, text_article}: propsArti
                     backgroundPosition: 'center'
                 }}
             ></div>
-            <Section className="pt-[40px] pb-[30px] bg-[#F5F9FF]">
-                <div className={`md:grid grid-cols-12 bg-white rounded-lg`}>
+            <Section className="pt-[40px] pb-[30px] bg-white">
+                <div className={`md:grid grid-cols-12 rounded-lg`}>
                     <div className={`col-span-9 min-h-[500px] `}>
-                        <div className={`article-text min-h-[300px] border`}>
+                        <div className={`text-center sm:text-left p-[10px] md:p-[30px] lg:p-[60px] min-h-[300px]`}>
                             {text_article}
                         </div>
                     </div>
-                    <div className={`col-span-3 border`}
+                    <div className={`col-span-3`}
                     style={{
                         backgroundImage: `url(${img_article})`,
                         backgroundSize: 'cover',

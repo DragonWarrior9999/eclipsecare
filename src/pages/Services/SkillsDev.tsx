@@ -18,16 +18,16 @@ export default function SkillsDev(){
     return(
         <>
             <HeroV2>
-                <div className="text">
+                <div className="p-[20px] text-center sm:text-left">
                     <p>Our services</p>
-                    <h1>Skills Development</h1>
+                    <h1 className="text-[3rem] sm:text-h1-base">Skills Development</h1>
                     <p>Practical skills for a more confident and capable you.</p>
                 </div>
             </HeroV2>
             <Section className="md:pb-[30px] md:pt-[30px] text-navy">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
-                        <h2>What is skills development?</h2>
+                    <div className={`text-center sm:text-left p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
+                        <h2 className="text-h2-sm sm:text-h2-base">What is skills development?</h2>
                         <br/>
                         <p>Through hands-on guidance and consistent support, we aim to boost confidence and enable participants to navigate their world with greater ease. By mastering these essential skills, individuals gain the tools they need to live more independently, pursue their dreams, and actively participate in their communities.</p>
                         <br/>

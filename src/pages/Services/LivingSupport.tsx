@@ -16,15 +16,15 @@ export default function LivingSupport(){
     return(
         <>
             <HeroV2>
-                <div className="text">
+                <div className="text text-center sm:text-left">
                     <p>Our services</p>
-                    <h1>Living Support.</h1>
+                    <h1 className="text-h1-sm sm:text-h1-base">Living Support.</h1>
                     <p>Supported Living Support (SIL)</p>
                 </div>
             </HeroV2>
             <Section className="md:pb-[30px] md:pt-[30px] text-navy">
-                <div className={`md:grid grid-cols-12 border`}>
-                    <div className={`p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
+                <div className={`md:grid grid-cols-12`}>
+                    <div className={`text-center sm:text-left p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
                         <h3>What is SIL?</h3>
                         <br/>
                         <p>Supported Independent Living refers to funding provided by the NDIS to assist participants with disabilities to live independently in their own homes or shared living arrangements. It covers support for daily tasks and activities, enabling individuals to build skills and live as autonomously as possible.</p>

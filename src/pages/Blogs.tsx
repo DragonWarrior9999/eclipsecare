@@ -2,6 +2,8 @@ import Section from '../components/Section';
 import Split from '../components/Split';
 import Quads from '../components/Quads';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
+import Form from '../components/Form';
 
 import img_spending from '../assets/spending-support.jpg';
 import img_gaming from '../assets/gaming-drug.jpg';
@@ -24,13 +26,13 @@ export default function Blogs(){
     return(
         <>
             <Hero img_src={img_hero}>
-                <div className="text">
-                    <h1>Blogs.</h1>
+                <div className="text-center sm:text-left text">
+                    <h1 className="text-h1-sm sm:text-h1-base">Blogs.</h1>
                     <p></p>
                 </div>
             </Hero>
             <Section className="min-h-[300px]">
-                <h1>Our Latest.</h1>
+                <h1 className="pt-[20px] text-center sm:text-left text-h1-sm sm:text-h1-base">Our Latest.</h1>
                 <Split left_span="6" right_span="6" className="w-full gap-6" responsive="md"
                 left={
                     <Quads className="gap-6"
@@ -170,6 +172,8 @@ export default function Blogs(){
                 }
                 ></Split>
             </Section>
+            <Form></Form>
+            <Footer></Footer>
         </>
     )
 }

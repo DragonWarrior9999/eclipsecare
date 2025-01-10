@@ -8,7 +8,7 @@ export default function Blog_NotMeetingNeeds(){
 
         <Article img_article="" img_hero={img_hero}
         text_article={
-            <h1>What to do if your NDIS plan isn't meeting your needs.</h1>
+            <h1 className="text-h1-sm sm:text-h1-base">What to do if your NDIS plan isn't meeting your needs.</h1>
         }></Article>
     
     )

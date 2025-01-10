@@ -9,7 +9,7 @@ export default function Blog_TipsOnTransitioning(){
         <Article img_hero={img_hero} img_article=""
         text_article={
             <>
-            <h1>Tips on transitioning from school to work with NDIS support.</h1>
+            <h1 className="text-h1-sm sm:text-h1-base">Tips on transitioning from school to work with NDIS support.</h1>
             <br/>
             </>
         }></Article>

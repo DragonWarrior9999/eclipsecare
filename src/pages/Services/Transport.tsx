@@ -16,16 +16,16 @@ export default function Transport(){
     return(
         <>
             <HeroV2>
-                <div className="text">
+                <div className="text text-center sm:text-left">
                     <p>Our services</p>
-                    <h1>Transport Management.</h1>
+                    <h1 className="text-h1-sm sm:text-h1-base">Transport Management.</h1>
                     <p>Your Journey, Our Priority.</p>
                 </div>
             </HeroV2>
             <Section className="md:pb-[30px] md:pt-[30px] text-navy">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
-                        <h2>How does transport management work?</h2>
+                    <div className={`text-center sm:text-left p-[20px] sm:p-[60px] col-span-9 min-h-[500px] `}>
+                        <h2 className="text-h2-sm sm:text-h2-base">How does transport management work?</h2>
                         <br/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat eget eros maximus cursus. Nunc vel turpis eget dui efficitur tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus at efficitur elit.</p>
                         <br/>

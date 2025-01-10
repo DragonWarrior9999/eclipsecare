@@ -18,9 +18,9 @@ import img_group from '../assets/4_people.jpg';
 export default function Services(){
 
     return (
-        <Section className="min-h-[300px] pb-[20px]">
-            <p>EclipseCare Services</p>
-            <h1>Our Services.</h1>
+        <Section className="border border-red-400 min-h-[300px] pt-[20px] pb-[20px]">
+            
+            <h1 className="text-center sm:text-left text-h1-sm sm:text-h1-base pb-[30px]">Our Services.</h1>
             <Split left_span="6" right_span="6" className="w-full gap-6" responsive="md"
             left={
                 <Quads className="gap-6"

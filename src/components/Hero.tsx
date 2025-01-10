@@ -19,7 +19,7 @@ export default function Hero({img_src, children}: propsHero){
                     backgroundSize: 'cover'
                 }}
             ></div>
-            <Section className="bg-babyblue min-h-[520px]">
+            <Section className="bg-babyblue min-h-[200px] pb-[20px] pt-[20px]">
                 <div className="grid h-full lg:grid-cols-12">
                     <div className="w-full mt-[30px] sm:mt-[70px] lg:col-span-7 text-navy">
                         {children}

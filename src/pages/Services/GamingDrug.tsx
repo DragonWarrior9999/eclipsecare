@@ -17,9 +17,9 @@ export default function GamingDrug(){
     return(
         <>
             <HeroV2>
-                <div className="text">
+                <div className="text-center sm:text-left text">
                     <p>Our services</p>
-                    <h1>Gaming and Drug Counselling.</h1>
+                    <h1 className="text-h1-sm sm:text-h1-base">Gaming and Drug Counselling.</h1>
                     <p>Helping you regain control and thrive in both worlds.</p>
                 </div>
             </HeroV2>

@@ -17,17 +17,17 @@ export default function BehaviourSupport(){
     return(
         <>
             <HeroV2>
-                <div className="text">
+                <div className="text text-center sm:text-left">
                     <p>Our services</p>
-                    <h1>Behaviour Support.</h1>
+                    <h1 className="text-h1-sm sm:text-h1-base">Behaviour Support.</h1>
                     <p>Compassionate care for lasting, positive outcomes.</p>
                 </div>
             </HeroV2>
             <Section className="md:pt-[40px] md:pb-[30px]">
                 <div className={`md:grid grid-cols-12 `}>
-                    <div className={`col-span-9 min-h-[500px] border`}>
-                        <div className={`p-[20px] sm:p-[60px] min-h-[300px] border`}>
-                            <h2>Promoting Positive Change</h2>
+                    <div className={`col-span-9 min-h-[500px]`}>
+                        <div className={`p-[20px] sm:p-[60px] min-h-[300px]`}>
+                            <h2 className="text-h2-sm sm:text-h2-base text-center sm:text-left">Promoting Positive Change</h2>
                             <br/>
                             <p>Our Behavior Support services are designed to empower individuals with disabilities to lead more fulfilling and independent lives by addressing challenging behaviors in a supportive and person-centered way. We work collaboratively with participants, their families, and support teams to develop individualized behavior support plans that focus on understanding the underlying causes of behaviors and implementing strategies to foster positive change. Our team of qualified specialists is dedicated to creating safe and respectful environments where participants can thrive.</p>
                             <br/>

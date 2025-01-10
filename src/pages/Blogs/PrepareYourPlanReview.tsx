@@ -8,7 +8,7 @@ export default function Blog_PlanReview(){
 
         <Article img_article="" img_hero={img_hero}
         text_article={
-            <h1>How to prepare your NDIS plan review.</h1>
+            <h1 className="text-h1-sm sm:text-h1-base">How to prepare your NDIS plan review.</h1>
         }></Article>
     
     )
